@@ -49,15 +49,15 @@
             this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
-            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.CacheRep = new MaterialSkin.Controls.MaterialListView();
             this.Busy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Dirty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Tag = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Repl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -419,6 +419,58 @@
             this.materialCard2.Size = new System.Drawing.Size(518, 374);
             this.materialCard2.TabIndex = 1;
             // 
+            // CacheRep
+            // 
+            this.CacheRep.AutoSizeTable = true;
+            this.CacheRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CacheRep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CacheRep.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Busy,
+            this.Dirty,
+            this.Tag,
+            this.Repl,
+            this.Data});
+            this.CacheRep.Depth = 0;
+            this.CacheRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CacheRep.FullRowSelect = true;
+            this.CacheRep.HideSelection = false;
+            this.CacheRep.Location = new System.Drawing.Point(34, 66);
+            this.CacheRep.MinimumSize = new System.Drawing.Size(400, 280);
+            this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
+            this.CacheRep.Name = "CacheRep";
+            this.CacheRep.OwnerDraw = true;
+            this.CacheRep.Scrollable = false;
+            this.CacheRep.Size = new System.Drawing.Size(442, 280);
+            this.CacheRep.TabIndex = 1;
+            this.CacheRep.UseCompatibleStateImageBehavior = false;
+            this.CacheRep.View = System.Windows.Forms.View.Details;
+            // 
+            // Busy
+            // 
+            this.Busy.Text = "Busy";
+            this.Busy.Width = 80;
+            // 
+            // Dirty
+            // 
+            this.Dirty.Text = "Dirty";
+            this.Dirty.Width = 82;
+            // 
+            // Tag
+            // 
+            this.Tag.Text = "Tag";
+            this.Tag.Width = 70;
+            // 
+            // Repl
+            // 
+            this.Repl.Text = "Replacement";
+            this.Repl.Width = 123;
+            // 
+            // Data
+            // 
+            this.Data.Text = "Data";
+            this.Data.Width = 87;
+            // 
             // materialLabel5
             // 
             this.materialLabel5.AutoSize = true;
@@ -450,63 +502,12 @@
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(32, 25);
+            this.materialLabel6.Location = new System.Drawing.Point(31, 25);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(49, 19);
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
-            // 
-            // CacheRep
-            // 
-            this.CacheRep.AutoSizeTable = false;
-            this.CacheRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.CacheRep.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CacheRep.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Busy,
-            this.Dirty,
-            this.Tag,
-            this.Repl,
-            this.Data});
-            this.CacheRep.Depth = 0;
-            this.CacheRep.FullRowSelect = true;
-            this.CacheRep.HideSelection = false;
-            this.CacheRep.Location = new System.Drawing.Point(34, 66);
-            this.CacheRep.MinimumSize = new System.Drawing.Size(200, 100);
-            this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
-            this.CacheRep.Name = "CacheRep";
-            this.CacheRep.OwnerDraw = true;
-            this.CacheRep.Size = new System.Drawing.Size(450, 291);
-            this.CacheRep.TabIndex = 1;
-            this.CacheRep.UseCompatibleStateImageBehavior = false;
-            this.CacheRep.View = System.Windows.Forms.View.Details;
-            this.CacheRep.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
-            // 
-            // Busy
-            // 
-            this.Busy.Text = "Busy";
-            this.Busy.Width = 80;
-            // 
-            // Dirty
-            // 
-            this.Dirty.Text = "Dirty";
-            this.Dirty.Width = 82;
-            // 
-            // Tag
-            // 
-            this.Tag.Text = "Tag";
-            this.Tag.Width = 70;
-            // 
-            // Repl
-            // 
-            this.Repl.Text = "Replacement";
-            this.Repl.Width = 123;
-            // 
-            // Data
-            // 
-            this.Data.Text = "Data";
-            this.Data.Width = 87;
             // 
             // Form1
             // 
