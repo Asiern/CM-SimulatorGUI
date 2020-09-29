@@ -16,7 +16,6 @@ namespace CacheMemorySimulator
     public partial class Form1 : MaterialForm
     {
         Cache CH;
-        double[][] datosCache;
         public Form1()
         {
             InitializeComponent();
@@ -62,23 +61,20 @@ namespace CacheMemorySimulator
         }
         private void loadTable(List<List<int>> List)
         {
-            foreach(List<int> Block in List)
-            {
-                foreach(int value in Block)
+                //TODO separate blocks into Table rows
+                foreach (List<int> Block in List)
                 {
-                    var item = new ListViewItem(value.ToString());
-                    CacheRep.Items.Add(item);
-                }
-            }
+                    foreach (int value in Block)
+                    {
+                        var item = new ListViewItem(value.ToString());
+                        CacheRep.Items.Add(item);
+                    }
+                } 
         }
         private void materialButton13_Click(object sender, EventArgs e)
         {
             this.ButtonGroupSwitch(1, this.materialButton13);
         }
 
-        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
