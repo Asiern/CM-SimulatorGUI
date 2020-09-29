@@ -52,6 +52,12 @@
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.CacheRep = new MaterialSkin.Controls.MaterialListView();
+            this.Busy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Dirty = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Tag = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Repl = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -136,6 +142,7 @@
             this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton13.UseAccentColor = false;
             this.materialButton13.UseVisualStyleBackColor = true;
+            this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
             // 
             // materialButton10
             // 
@@ -400,6 +407,7 @@
             // materialCard2
             // 
             this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.CacheRep);
             this.materialCard2.Controls.Add(this.materialLabel5);
             this.materialCard2.Depth = 0;
             this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -449,6 +457,57 @@
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
             // 
+            // CacheRep
+            // 
+            this.CacheRep.AutoSizeTable = false;
+            this.CacheRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CacheRep.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CacheRep.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Busy,
+            this.Dirty,
+            this.Tag,
+            this.Repl,
+            this.Data});
+            this.CacheRep.Depth = 0;
+            this.CacheRep.FullRowSelect = true;
+            this.CacheRep.HideSelection = false;
+            this.CacheRep.Location = new System.Drawing.Point(34, 66);
+            this.CacheRep.MinimumSize = new System.Drawing.Size(200, 100);
+            this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
+            this.CacheRep.Name = "CacheRep";
+            this.CacheRep.OwnerDraw = true;
+            this.CacheRep.Size = new System.Drawing.Size(450, 291);
+            this.CacheRep.TabIndex = 1;
+            this.CacheRep.UseCompatibleStateImageBehavior = false;
+            this.CacheRep.View = System.Windows.Forms.View.Details;
+            this.CacheRep.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
+            // 
+            // Busy
+            // 
+            this.Busy.Text = "Busy";
+            this.Busy.Width = 80;
+            // 
+            // Dirty
+            // 
+            this.Dirty.Text = "Dirty";
+            this.Dirty.Width = 82;
+            // 
+            // Tag
+            // 
+            this.Tag.Text = "Tag";
+            this.Tag.Width = 70;
+            // 
+            // Repl
+            // 
+            this.Repl.Text = "Replacement";
+            this.Repl.Width = 123;
+            // 
+            // Data
+            // 
+            this.Data.Text = "Data";
+            this.Data.Width = 87;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,7 +517,7 @@
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialCard1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Cache Memory Simulator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialCard1.ResumeLayout(false);
             this.materialCard1.PerformLayout();
@@ -496,6 +555,12 @@
         private MaterialSkin.Controls.MaterialCard materialCard3;
         private MaterialSkin.Controls.MaterialLabel materialLabel6;
         private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialListView CacheRep;
+        private System.Windows.Forms.ColumnHeader Busy;
+        private System.Windows.Forms.ColumnHeader Dirty;
+        private System.Windows.Forms.ColumnHeader Tag;
+        private System.Windows.Forms.ColumnHeader Repl;
+        private System.Windows.Forms.ColumnHeader Data;
     }
 }
 
