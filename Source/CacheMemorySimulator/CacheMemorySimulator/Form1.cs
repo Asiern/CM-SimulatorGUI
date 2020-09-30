@@ -72,6 +72,8 @@ namespace CacheMemorySimulator
                     selectButton(this.materialButton11);
                     break;
                 case 5:
+                    selectButton(this.materialButton12);
+                    selectButton(this.materialButton13);
                     break;
             }
         }
@@ -112,8 +114,34 @@ namespace CacheMemorySimulator
                 CacheRep.Items.AddRange(new ListViewItem[] { item0,item1,item2,item3,item4});
             } 
         }
+        public void send()
+        {
+            try
+            {
+                this.interpretAddress(int.Parse(input.Text), 4);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        public void interpretAddress(int address,int wordSize)
+        {
+            try {
+                this.address.Text = address.ToString();
+                this.word.Text = (address / wordSize).ToString();
+                //TODO Block
+                //int block = address % wordSize;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
         private void materialButton13_Click(object sender, EventArgs e)
         {
+            this.ButtonGroupSwitch(5);
         }
 
         private void materialButton2_Click(object sender, EventArgs e)
@@ -164,6 +192,17 @@ namespace CacheMemorySimulator
         private void materialButton10_Click(object sender, EventArgs e)
         {
             this.ButtonGroupSwitch(4);
+        }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            this.send();
+
+        }
+
+        private void materialButton12_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(5);
         }
     }
 }
