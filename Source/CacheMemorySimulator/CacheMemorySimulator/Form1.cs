@@ -61,15 +61,40 @@ namespace CacheMemorySimulator
         }
         private void loadTable(List<List<int>> List)
         {
-                //TODO separate blocks into Table rows
-                foreach (List<int> Block in List)
+            //Clear ListView
+            CacheRep.Clear();
+            //TODO separate blocks into Table rows
+            foreach (List<int> Block in List)
+            {
+                ListViewItem item0 = new ListViewItem("Busy",0);
+                ListViewItem item1 = new ListViewItem("Dirty", 0);
+                ListViewItem item2 = new ListViewItem("Tag", 0);
+                ListViewItem item3 = new ListViewItem("Rerp", 0);
+                ListViewItem item4 = new ListViewItem("Data", 0);
+                for (int i=0;i<5;i++)
                 {
-                    foreach (int value in Block)
+                    switch (i)
                     {
-                        var item = new ListViewItem(value.ToString());
-                        CacheRep.Items.Add(item);
+                        case 0:
+                            item0.SubItems.Add(Block[i].ToString());
+                            break;
+                        case 1:
+                            item1.SubItems.Add(Block[i].ToString());
+                            break;
+                        case 2:
+                            item2.SubItems.Add(Block[i].ToString());
+                            break;
+                        case 3:
+                            item3.SubItems.Add(Block[i].ToString());
+                            break;
+                        case 4:
+                            item4.SubItems.Add(Block[i].ToString());
+                            break;
+
                     }
-                } 
+                }
+                CacheRep.Items.AddRange(new ListViewItem[] { item0,item1,item2,item3,item4});
+            } 
         }
         private void materialButton13_Click(object sender, EventArgs e)
         {
