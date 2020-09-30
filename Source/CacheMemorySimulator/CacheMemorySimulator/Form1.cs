@@ -36,24 +36,40 @@ namespace CacheMemorySimulator
             loadTable(CH.getCache());
 
         }
-        //TODO selectButton
-        private void selectButton(MaterialButton Btn, Boolean status)
+        //TODO FIX buttongroup>2
+        private void selectButton(MaterialButton Btn)
         {
-            Btn.Enabled = false;
+            if (Btn.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                Btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            }
+            else if(Btn.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained)
+            {
+                Btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            }
         }
         //TODO ButtonGroupSwitch
-        private void ButtonGroupSwitch(int GroupCode, MaterialButton btn)
+        private void ButtonGroupSwitch(int GroupCode)
         {
             switch (GroupCode)
             {
                 case 1:
-                    selectButton(btn,true);
+                    selectButton(this.materialButton2);
+                    selectButton(this.materialButton3);
                     break;
                 case 2:
+                    selectButton(this.materialButton4);
+                    selectButton(this.materialButton5);
                     break;
                 case 3:
+                    selectButton(this.materialButton6);
+                    selectButton(this.materialButton7);
+                    selectButton(this.materialButton8);
+                    selectButton(this.materialButton9);
                     break;
                 case 4:
+                    selectButton(this.materialButton10);
+                    selectButton(this.materialButton11);
                     break;
                 case 5:
                     break;
@@ -98,8 +114,56 @@ namespace CacheMemorySimulator
         }
         private void materialButton13_Click(object sender, EventArgs e)
         {
-            this.ButtonGroupSwitch(1, this.materialButton13);
         }
 
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(1);
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(1);
+        }
+
+        private void materialButton5_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(2);
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(2);
+        }
+
+        private void materialButton7_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(3);
+        }
+
+        private void materialButton6_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(3);
+        }
+
+        private void materialButton9_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(3);
+        }
+
+        private void materialButton8_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(3);
+        }
+
+        private void materialButton11_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(4);
+        }
+
+        private void materialButton10_Click(object sender, EventArgs e)
+        {
+            this.ButtonGroupSwitch(4);
+        }
     }
 }
