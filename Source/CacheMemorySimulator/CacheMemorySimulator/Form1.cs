@@ -35,8 +35,6 @@ namespace CacheMemorySimulator
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //TODO get default values
-
             //Initialize Cache
             //Default values
             CH = new Cache(this.wSize, this.bSize);
@@ -44,12 +42,10 @@ namespace CacheMemorySimulator
             loadTable(CH.getCache());
 
         }
-        //TODO FIX buttongroup>2
         private void selectButton(MaterialButton Btn)
         {
             Btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
         }
-        //TODO ButtonGroupSwitch
         private void ButtonGroupSwitch(int GroupCode)
         {
             switch (GroupCode)
@@ -120,15 +116,17 @@ namespace CacheMemorySimulator
             try
             {
                 int address = int.Parse(input.Text);
+                int tag, set, line, block;
+                (tag, set, line, block) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
 
-                this.interpretAddress(address, this.wSize, this.bSize, this.sSize);
+                this.CH.operate(this.operation, tag, set, line, block, this.rPolicy);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-        public void interpretAddress(int address, int wordSize, int blockSize, int setSize)
+        public (int, int, int, int) interpretAddress(int address, int wordSize, int blockSize, int setSize)
         {
             try
             {
@@ -147,6 +145,7 @@ namespace CacheMemorySimulator
                     //Direct
                     tag = block / num_lines;
                     line = block % num_lines;
+                    set = -1;
                     this.Chtag.Text = tag.ToString();
                     this.set.Text = "None";
                     this.line.Text = line.ToString();
@@ -156,6 +155,8 @@ namespace CacheMemorySimulator
                 {
                     //Fully
                     tag = block;
+                    line = -1;
+                    set = -1;
                     this.line.Text = "None";
                     this.set.Text = "None";
                     this.Chtag.Text = tag.ToString();
@@ -166,6 +167,7 @@ namespace CacheMemorySimulator
                     //Set 
                     tag = block / num_sets_cache;
                     set = block % num_sets_cache;
+                    line = -1;
                     this.line.Text = "None";
                     this.Chtag.Text = tag.ToString();
                     this.set.Text = set.ToString();
@@ -176,10 +178,12 @@ namespace CacheMemorySimulator
                 this.address.Text = address.ToString();
                 this.word.Text = word.ToString();
 
+                return (tag, set, line, block);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return (-1, -1, -1, -1);
             }
 
         }
