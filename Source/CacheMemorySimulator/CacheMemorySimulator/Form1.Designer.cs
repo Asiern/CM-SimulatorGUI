@@ -774,7 +774,9 @@
             this.Controls.Add(this.materialCard2);
             this.Controls.Add(this.materialCard1);
             this.Controls.Add(this.materialLabel6);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.Sizable = false;
             this.Text = "Cache Memory Simulator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialCard1.ResumeLayout(false);
