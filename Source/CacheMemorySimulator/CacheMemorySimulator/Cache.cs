@@ -15,9 +15,10 @@ namespace CacheMemorySimulator
         private List<List<int>> cache;
         private int wSize, bSize, bCount, sSize;
         private String rPolicy;
+        private int num_lines = 8;
 
 
-        public Cache(int wSize,int bSize, int sSize, String rPolicy)
+        public Cache(int wSize, int bSize, int sSize, String rPolicy)
         {
             this.wSize = wSize;
             this.bSize = bSize;
@@ -54,7 +55,7 @@ namespace CacheMemorySimulator
             {
                 return this.cache[index];
             }
-            catch(IndexOutOfRangeException IE)
+            catch (IndexOutOfRangeException IE)
             {
                 MessageBox.Show(IE.Message);
             }
@@ -72,6 +73,12 @@ namespace CacheMemorySimulator
             }
             return null;
         }
+
+        public int getCacheLines()
+        {
+            return this.num_lines;
+        }
+
         private void operate(int address, Boolean operation)
         {
             if (operation)
