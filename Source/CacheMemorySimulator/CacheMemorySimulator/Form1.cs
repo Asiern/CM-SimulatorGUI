@@ -74,41 +74,28 @@ namespace CacheMemorySimulator
                     break;
             }
         }
+        private void SetHeight(ListView listView, int height)
+        {
+            ImageList imgList = new ImageList();
+            imgList.ImageSize = new Size(1, height);
+            listView.SmallImageList = imgList;
+        }
         private void loadTable(List<List<int>> List)
         {
             //Clear ListView
-            CacheRep.Clear();
+            CacheRep.Items.Clear();
+            //Set proper size
+            SetHeight(this.CacheRep, 35);
             //TODO separate blocks into Table rows
-            foreach (List<int> Block in List)
-            {
-                ListViewItem item0 = new ListViewItem("Busy", 0);
-                ListViewItem item1 = new ListViewItem("Dirty", 0);
-                ListViewItem item2 = new ListViewItem("Tag", 0);
-                ListViewItem item3 = new ListViewItem("Rerp", 0);
-                ListViewItem item4 = new ListViewItem("Data", 0);
-                for (int i = 0; i < 5; i++)
-                {
-                    switch (i)
-                    {
-                        case 0:
-                            item0.SubItems.Add(Block[i].ToString());
-                            break;
-                        case 1:
-                            item1.SubItems.Add(Block[i].ToString());
-                            break;
-                        case 2:
-                            item2.SubItems.Add(Block[i].ToString());
-                            break;
-                        case 3:
-                            item3.SubItems.Add(Block[i].ToString());
-                            break;
-                        case 4:
-                            item4.SubItems.Add(Block[i].ToString());
-                            break;
 
-                    }
+            foreach (List<int> row in List)
+            {
+                string[] listRow = new string[5];
+                for (int i = 0; i < row.Count; i++)
+                {
+                    listRow[i] = row[i].ToString();
                 }
-                CacheRep.Items.AddRange(new ListViewItem[] { item0, item1, item2, item3, item4 });
+                this.CacheRep.Items.Add(new ListViewItem(listRow));
             }
         }
         public void send()
@@ -120,6 +107,8 @@ namespace CacheMemorySimulator
                 (tag, set, line, block) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
 
                 this.CH.operate(this.operation, tag, set, line, block, this.rPolicy);
+
+                this.loadTable(this.CH.getCache());
             }
             catch (Exception ex)
             {

@@ -449,6 +449,8 @@
             // 
             // CacheRep
             // 
+            this.CacheRep.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.CacheRep.AutoArrange = false;
             this.CacheRep.AutoSizeTable = true;
             this.CacheRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.CacheRep.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -461,6 +463,7 @@
             this.CacheRep.Depth = 0;
             this.CacheRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CacheRep.FullRowSelect = true;
+            this.CacheRep.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.CacheRep.HideSelection = false;
             this.CacheRep.Location = new System.Drawing.Point(34, 34);
             this.CacheRep.MinimumSize = new System.Drawing.Size(400, 280);
@@ -471,6 +474,7 @@
             this.CacheRep.Scrollable = false;
             this.CacheRep.Size = new System.Drawing.Size(442, 280);
             this.CacheRep.TabIndex = 1;
+            this.CacheRep.TileSize = new System.Drawing.Size(168, 30);
             this.CacheRep.UseCompatibleStateImageBehavior = false;
             this.CacheRep.View = System.Windows.Forms.View.Details;
             // 
