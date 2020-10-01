@@ -75,7 +75,7 @@ namespace CacheMemorySimulator
         }
 
         //TODO operate function
-        public void operate(String operation, int tag, int set, int line, int block, String rPolicy)
+        public void store(int tag, int set, int line, int block, String rPolicy)
         {
             //Fully Associative
             if (set == -1 && line == -1)
@@ -89,6 +89,7 @@ namespace CacheMemorySimulator
                     {
                         //Found an empty space
                         //Write data to row
+                        //TODO repl.
                         this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 1, block };
                         emptySapce = true;
                         break;
@@ -98,7 +99,15 @@ namespace CacheMemorySimulator
                 //No empty space found on cache
                 if (!emptySapce)
                 {
-
+                    //Need to rewrite data
+                    if (rPolicy == "FIFO")
+                    {
+                        //TODO replace using fifo
+                    }
+                    else
+                    {
+                        //TODO replace using LRU
+                    }
                 }
             }
         }
