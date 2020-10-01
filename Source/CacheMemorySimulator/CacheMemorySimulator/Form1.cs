@@ -86,7 +86,6 @@ namespace CacheMemorySimulator
             CacheRep.Items.Clear();
             //Set proper size
             SetHeight(this.CacheRep, 35);
-            //TODO separate blocks into Table rows
 
             foreach (List<int> row in List)
             {
