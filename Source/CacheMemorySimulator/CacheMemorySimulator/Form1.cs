@@ -103,9 +103,19 @@ namespace CacheMemorySimulator
             {
                 int address = int.Parse(input.Text);
                 int tag, set, line, block;
+
+                //INTERPRET ADDRESS
                 (tag, set, line, block) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
 
-                this.CH.operate(this.operation, tag, set, line, block, this.rPolicy);
+                if (this.operation == "STORE")
+                {
+                    //STORE DATA
+                    this.CH.store(tag, set, line, block, this.rPolicy);
+                }
+                else
+                {
+                    //TODO READ DATA
+                }
 
                 this.loadTable(this.CH.getCache());
             }
@@ -141,7 +151,7 @@ namespace CacheMemorySimulator
                 }
                 else if (num_sets_cache == 1)
                 {
-                    //Fully
+                    //Fully Associative
                     tag = block;
                     line = -1;
                     set = -1;
@@ -152,7 +162,7 @@ namespace CacheMemorySimulator
                 }
                 else
                 {
-                    //Set 
+                    //Set Associative
                     tag = block / num_sets_cache;
                     set = block % num_sets_cache;
                     line = -1;
