@@ -45,7 +45,7 @@
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.wSize4btn = new MaterialSkin.Controls.MaterialButton();
             this.input = new MaterialSkin.Controls.MaterialTextBox();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
@@ -71,6 +71,10 @@
             this.address = new MaterialSkin.Controls.MaterialLabel();
             this.MMAddress = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
+            this.mapping = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.line = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -95,7 +99,7 @@
             this.materialCard1.Controls.Add(this.materialLabel2);
             this.materialCard1.Controls.Add(this.materialButton3);
             this.materialCard1.Controls.Add(this.materialLabel1);
-            this.materialCard1.Controls.Add(this.materialButton2);
+            this.materialCard1.Controls.Add(this.wSize4btn);
             this.materialCard1.Controls.Add(this.input);
             this.materialCard1.Controls.Add(this.materialButton1);
             this.materialCard1.Depth = 0;
@@ -377,24 +381,24 @@
             this.materialLabel1.TabIndex = 4;
             this.materialLabel1.Text = "Word Size";
             // 
-            // materialButton2
+            // wSize4btn
             // 
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.DrawShadows = true;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(43, 53);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.Size = new System.Drawing.Size(78, 36);
-            this.materialButton2.TabIndex = 3;
-            this.materialButton2.Text = "4 bytes";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = false;
-            this.materialButton2.UseVisualStyleBackColor = true;
-            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
+            this.wSize4btn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.wSize4btn.Depth = 0;
+            this.wSize4btn.DrawShadows = true;
+            this.wSize4btn.HighEmphasis = true;
+            this.wSize4btn.Icon = null;
+            this.wSize4btn.Location = new System.Drawing.Point(43, 53);
+            this.wSize4btn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.wSize4btn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.wSize4btn.Name = "wSize4btn";
+            this.wSize4btn.Size = new System.Drawing.Size(78, 36);
+            this.wSize4btn.TabIndex = 3;
+            this.wSize4btn.Text = "4 bytes";
+            this.wSize4btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.wSize4btn.UseAccentColor = false;
+            this.wSize4btn.UseVisualStyleBackColor = true;
+            this.wSize4btn.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // input
             // 
@@ -511,6 +515,10 @@
             // materialCard3
             // 
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.line);
+            this.materialCard3.Controls.Add(this.materialLabel14);
+            this.materialCard3.Controls.Add(this.mapping);
+            this.materialCard3.Controls.Add(this.materialLabel13);
             this.materialCard3.Controls.Add(this.Chtag);
             this.materialCard3.Controls.Add(this.set);
             this.materialCard3.Controls.Add(this.block);
@@ -539,7 +547,7 @@
             this.Chtag.AutoSize = true;
             this.Chtag.Depth = 0;
             this.Chtag.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.Chtag.Location = new System.Drawing.Point(232, 83);
+            this.Chtag.Location = new System.Drawing.Point(171, 83);
             this.Chtag.MouseState = MaterialSkin.MouseState.HOVER;
             this.Chtag.Name = "Chtag";
             this.Chtag.Size = new System.Drawing.Size(45, 19);
@@ -611,7 +619,7 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(193, 83);
+            this.materialLabel9.Location = new System.Drawing.Point(132, 83);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(33, 19);
@@ -704,6 +712,54 @@
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
             // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.Location = new System.Drawing.Point(357, 83);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(68, 19);
+            this.materialLabel13.TabIndex = 14;
+            this.materialLabel13.Text = "Mapping:";
+            // 
+            // mapping
+            // 
+            this.mapping.AutoSize = true;
+            this.mapping.Depth = 0;
+            this.mapping.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.mapping.Location = new System.Drawing.Point(431, 83);
+            this.mapping.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mapping.Name = "mapping";
+            this.mapping.Size = new System.Drawing.Size(45, 19);
+            this.mapping.TabIndex = 15;
+            this.mapping.Text = "empty";
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.Location = new System.Drawing.Point(251, 83);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(35, 19);
+            this.materialLabel14.TabIndex = 16;
+            this.materialLabel14.Text = "Line:";
+            // 
+            // line
+            // 
+            this.line.AutoSize = true;
+            this.line.Depth = 0;
+            this.line.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.line.Location = new System.Drawing.Point(292, 83);
+            this.line.MouseState = MaterialSkin.MouseState.HOVER;
+            this.line.Name = "line";
+            this.line.Size = new System.Drawing.Size(45, 19);
+            this.line.TabIndex = 17;
+            this.line.Text = "empty";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -731,7 +787,7 @@
 
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton wSize4btn;
         private MaterialSkin.Controls.MaterialTextBox input;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton3;
@@ -772,6 +828,10 @@
         private MaterialSkin.Controls.MaterialLabel block;
         private MaterialSkin.Controls.MaterialLabel Chtag;
         private MaterialSkin.Controls.MaterialLabel set;
+        private MaterialSkin.Controls.MaterialLabel mapping;
+        private MaterialSkin.Controls.MaterialLabel materialLabel13;
+        private MaterialSkin.Controls.MaterialLabel line;
+        private MaterialSkin.Controls.MaterialLabel materialLabel14;
     }
 }
 
