@@ -74,18 +74,11 @@ namespace CacheMemorySimulator
             return this.num_lines;
         }
 
-        private void operate(int address, Boolean operation)
+        //TODO operate function
+        public void operate(String operation, int tag, int set, int line, int block, String rPolicy)
         {
-            if (operation)
-            {
-                //TODO operate Write data
-            }
-            else
-            {
-                //TODO operate Read data
-            }
+
         }
 
-        //TODO CACHE Getters/Setters
     }
 }
