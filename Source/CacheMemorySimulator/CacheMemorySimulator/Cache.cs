@@ -13,17 +13,12 @@ namespace CacheMemorySimulator
     class Cache
     {
         private List<List<int>> cache;
-        private int wSize, bSize, bCount, sSize;
-        private String rPolicy;
+        private int bCount;
         private int num_lines = 8;
 
 
-        public Cache(int wSize, int bSize, int sSize, String rPolicy)
+        public Cache(int wSize, int bSize)
         {
-            this.wSize = wSize;
-            this.bSize = bSize;
-            this.sSize = sSize;
-            this.rPolicy = rPolicy;
             this.bCount = bSize / wSize;
             this.cache = new List<List<int>>(bCount);
 
