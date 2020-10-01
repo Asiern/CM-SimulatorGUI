@@ -77,7 +77,30 @@ namespace CacheMemorySimulator
         //TODO operate function
         public void operate(String operation, int tag, int set, int line, int block, String rPolicy)
         {
+            //Fully Associative
+            if (set == -1 && line == -1)
+            {
+                Boolean emptySapce = false;
+                //Search for a free space in cache
+                foreach (List<int> row in this.cache)
+                {
+                    //Busy == 0
+                    if (row[0] == 0)
+                    {
+                        //Found an empty space
+                        //Write data to row
+                        this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 1, block };
+                        emptySapce = true;
+                        break;
+                    }
+                }
 
+                //No empty space found on cache
+                if (!emptySapce)
+                {
+
+                }
+            }
         }
 
     }
