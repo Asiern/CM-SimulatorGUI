@@ -25,10 +25,11 @@ namespace CacheMemorySimulator
             this.initilaize();
         }
 
-        private void initilaize()
+        public void initilaize()
         {
             try
             {
+                this.cache.Clear();
                 for (int blockIndex = 0; blockIndex < this.bCount; blockIndex++)
                 {
                     List<int> block = new List<int>(5);
@@ -84,8 +85,7 @@ namespace CacheMemorySimulator
                 //Search for a free space in cache
                 foreach (List<int> row in this.cache)
                 {
-                    //Busy == 0
-                    if (row[0] == 0)
+                    if (row[0] == 0 || row[4] == block)
                     {
                         //Found an empty space
                         //Write data to row
