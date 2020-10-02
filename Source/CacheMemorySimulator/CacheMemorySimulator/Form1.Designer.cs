@@ -57,6 +57,10 @@
             this.Data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.line = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.mapping = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.Chtag = new MaterialSkin.Controls.MaterialLabel();
             this.set = new MaterialSkin.Controls.MaterialLabel();
             this.block = new MaterialSkin.Controls.MaterialLabel();
@@ -71,10 +75,6 @@
             this.address = new MaterialSkin.Controls.MaterialLabel();
             this.MMAddress = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.mapping = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.line = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -465,7 +465,7 @@
             this.CacheRep.FullRowSelect = true;
             this.CacheRep.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.CacheRep.HideSelection = false;
-            this.CacheRep.Location = new System.Drawing.Point(34, 34);
+            this.CacheRep.Location = new System.Drawing.Point(34, 17);
             this.CacheRep.MinimumSize = new System.Drawing.Size(400, 280);
             this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
             this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
@@ -545,6 +545,54 @@
             this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard3.Size = new System.Drawing.Size(519, 178);
             this.materialCard3.TabIndex = 2;
+            // 
+            // line
+            // 
+            this.line.AutoSize = true;
+            this.line.Depth = 0;
+            this.line.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.line.Location = new System.Drawing.Point(292, 83);
+            this.line.MouseState = MaterialSkin.MouseState.HOVER;
+            this.line.Name = "line";
+            this.line.Size = new System.Drawing.Size(45, 19);
+            this.line.TabIndex = 17;
+            this.line.Text = "empty";
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.Location = new System.Drawing.Point(251, 83);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(35, 19);
+            this.materialLabel14.TabIndex = 16;
+            this.materialLabel14.Text = "Line:";
+            // 
+            // mapping
+            // 
+            this.mapping.AutoSize = true;
+            this.mapping.Depth = 0;
+            this.mapping.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.mapping.Location = new System.Drawing.Point(431, 83);
+            this.mapping.MouseState = MaterialSkin.MouseState.HOVER;
+            this.mapping.Name = "mapping";
+            this.mapping.Size = new System.Drawing.Size(45, 19);
+            this.mapping.TabIndex = 15;
+            this.mapping.Text = "empty";
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.Location = new System.Drawing.Point(357, 83);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(68, 19);
+            this.materialLabel13.TabIndex = 14;
+            this.materialLabel13.Text = "Mapping:";
             // 
             // Chtag
             // 
@@ -715,54 +763,6 @@
             this.materialLabel6.Size = new System.Drawing.Size(45, 17);
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
-            // 
-            // materialLabel13
-            // 
-            this.materialLabel13.AutoSize = true;
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(357, 83);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Size = new System.Drawing.Size(68, 19);
-            this.materialLabel13.TabIndex = 14;
-            this.materialLabel13.Text = "Mapping:";
-            // 
-            // mapping
-            // 
-            this.mapping.AutoSize = true;
-            this.mapping.Depth = 0;
-            this.mapping.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.mapping.Location = new System.Drawing.Point(431, 83);
-            this.mapping.MouseState = MaterialSkin.MouseState.HOVER;
-            this.mapping.Name = "mapping";
-            this.mapping.Size = new System.Drawing.Size(45, 19);
-            this.mapping.TabIndex = 15;
-            this.mapping.Text = "empty";
-            // 
-            // materialLabel14
-            // 
-            this.materialLabel14.AutoSize = true;
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(251, 83);
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            this.materialLabel14.Size = new System.Drawing.Size(35, 19);
-            this.materialLabel14.TabIndex = 16;
-            this.materialLabel14.Text = "Line:";
-            // 
-            // line
-            // 
-            this.line.AutoSize = true;
-            this.line.Depth = 0;
-            this.line.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.line.Location = new System.Drawing.Point(292, 83);
-            this.line.MouseState = MaterialSkin.MouseState.HOVER;
-            this.line.Name = "line";
-            this.line.Size = new System.Drawing.Size(45, 19);
-            this.line.TabIndex = 17;
-            this.line.Text = "empty";
             // 
             // Form1
             // 
