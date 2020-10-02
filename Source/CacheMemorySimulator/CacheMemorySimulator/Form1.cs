@@ -189,85 +189,142 @@ namespace CacheMemorySimulator
 
         private void materialButton2_Click(object sender, EventArgs e)
         {
-            this.wSize = 4;
-            this.ButtonGroupSwitch(1);
-            wSize4btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (wSize4btn.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.wSize = 4;
+                this.ButtonGroupSwitch(1);
+                wSize4btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
+
         }
 
         private void materialButton3_Click(object sender, EventArgs e)
         {
-            this.wSize = 8;
-            this.ButtonGroupSwitch(1);
-            materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton3.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.wSize = 8;
+                this.ButtonGroupSwitch(1);
+                materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton5_Click(object sender, EventArgs e)
         {
-            this.bSize = 32;
-            this.ButtonGroupSwitch(2);
-            materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton5.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.bSize = 32;
+                this.ButtonGroupSwitch(2);
+                materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton4_Click(object sender, EventArgs e)
         {
-            this.bSize = 64;
-            this.ButtonGroupSwitch(2);
-            materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton4.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.bSize = 64;
+                this.ButtonGroupSwitch(2);
+                materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton7_Click(object sender, EventArgs e)
         {
-            this.sSize = 1;
-            this.ButtonGroupSwitch(3);
-            materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton7.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.sSize = 1;
+                this.ButtonGroupSwitch(3);
+                materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton6_Click(object sender, EventArgs e)
         {
-            this.sSize = 2;
-            this.ButtonGroupSwitch(3);
-            materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton6.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.sSize = 2;
+                this.ButtonGroupSwitch(3);
+                materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton9_Click(object sender, EventArgs e)
         {
-            this.sSize = 4;
-            this.ButtonGroupSwitch(3);
-            materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton9.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.sSize = 4;
+                this.ButtonGroupSwitch(3);
+                materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton8_Click(object sender, EventArgs e)
         {
-            this.sSize = 8;
-            this.ButtonGroupSwitch(3);
-            materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton8.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.sSize = 8;
+                this.ButtonGroupSwitch(3);
+                materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton11_Click(object sender, EventArgs e)
         {
-            this.rPolicy = "FIFO";
-            this.ButtonGroupSwitch(4);
-            materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton11.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.rPolicy = "FIFO";
+                this.ButtonGroupSwitch(4);
+                materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton10_Click(object sender, EventArgs e)
         {
-            this.rPolicy = "LRU";
-            this.ButtonGroupSwitch(4);
-            materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton10.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.rPolicy = "LRU";
+                this.ButtonGroupSwitch(4);
+                materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+                CH.initilaize();
+                this.loadTable(CH.getCache());
+            }
         }
 
         private void materialButton12_Click(object sender, EventArgs e)
         {
-            this.operation = "STORE";
-            this.ButtonGroupSwitch(5);
-            materialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton12.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.operation = "STORE";
+                this.ButtonGroupSwitch(5);
+                materialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            }
         }
         private void materialButton13_Click(object sender, EventArgs e)
         {
-            this.rPolicy = "LOAD";
-            this.ButtonGroupSwitch(5);
-            materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            if (materialButton13.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
+            {
+                this.rPolicy = "LOAD";
+                this.ButtonGroupSwitch(5);
+                materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            }
         }
         private void materialButton1_Click(object sender, EventArgs e)
         {
