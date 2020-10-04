@@ -466,13 +466,13 @@
             this.CacheRep.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.CacheRep.HideSelection = false;
             this.CacheRep.Location = new System.Drawing.Point(34, 17);
-            this.CacheRep.MinimumSize = new System.Drawing.Size(400, 280);
+            this.CacheRep.MinimumSize = new System.Drawing.Size(400, 300);
             this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
             this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
             this.CacheRep.Name = "CacheRep";
             this.CacheRep.OwnerDraw = true;
             this.CacheRep.Scrollable = false;
-            this.CacheRep.Size = new System.Drawing.Size(442, 280);
+            this.CacheRep.Size = new System.Drawing.Size(442, 300);
             this.CacheRep.TabIndex = 1;
             this.CacheRep.TileSize = new System.Drawing.Size(168, 30);
             this.CacheRep.UseCompatibleStateImageBehavior = false;

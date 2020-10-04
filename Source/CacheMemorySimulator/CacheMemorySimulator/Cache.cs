@@ -110,6 +110,31 @@ namespace CacheMemorySimulator
                     }
                 }
             }
+            //Direct Mapping
+            else if (set == -1 && line != -1)
+            {
+                //See if cache line is empty
+                if (this.cache[line][0] == 0)
+                {
+                    //Cache line was empty
+                    //Write data to cache
+                    //TODO repl.
+                    List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                    this.cache[line] = newRow;
+                }
+                else //Cache line busy
+                {
+                    if (this.cache[line][0] == 1) //See if data is dirty
+                    {
+                        //Write data to MM
+                    }
+                }
+            }
+            //Set Associative
+            else
+            {
+
+            }
         }
 
     }
