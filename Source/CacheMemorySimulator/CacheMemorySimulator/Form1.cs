@@ -115,6 +115,7 @@ namespace CacheMemorySimulator
                 else
                 {
                     //TODO READ DATA
+                    this.CH.load(tag, set, line, block, this.rPolicy);
                 }
 
                 this.loadTable(this.CH.getCache());
