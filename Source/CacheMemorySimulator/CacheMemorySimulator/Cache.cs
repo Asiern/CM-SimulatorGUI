@@ -75,8 +75,13 @@ namespace CacheMemorySimulator
             return this.num_lines;
         }
 
-        //TODO operate function
         public void store(int tag, int set, int line, int block, String rPolicy)
+        {
+
+        }
+
+        //TODO operate function
+        public void load(int tag, int set, int line, int block, String rPolicy)
         {
             //Fully Associative
             if (set == -1 && line == -1)
