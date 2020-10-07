@@ -78,6 +78,11 @@ namespace CacheMemorySimulator
         //TODO store function
         public int store(int tag, int set, int line, int block, String rPolicy)
         {
+            //Fully Associative
+            if (set == -1 && line == -1)
+            {
+
+            }
             return -1;
         }
 
@@ -111,16 +116,17 @@ namespace CacheMemorySimulator
                     {
                         //TODO replace using fifo
                         //Search for line to e replaced
-                        foreach(List<int> row in this.cache){
-                            if(row[3] == 000) //found oldest data in cache
+                        foreach (List<int> row in this.cache)
+                        {
+                            if (row[3] == 000) //found oldest data in cache
                             {
-                                if(row[1] == 1) //Data dirty
+                                if (row[1] == 1) //Data dirty
                                 {
                                     //Write data to MM
                                 }
                                 //Write data to cache
                                 List<int> newRow = new List<int>(5) { 1, 1, tag, 111, block };
-                                this.cache[this.cache.IndexOf(row)] = newRow; 
+                                this.cache[this.cache.IndexOf(row)] = newRow;
                                 break;
                             }
                         }
