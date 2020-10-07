@@ -75,12 +75,13 @@ namespace CacheMemorySimulator
             return this.num_lines;
         }
 
-        public void store(int tag, int set, int line, int block, String rPolicy)
+        //TODO store function
+        public int store(int tag, int set, int line, int block, String rPolicy)
         {
-
+            return -1;
         }
 
-        //TODO operate function
+        //TODO load function
         public int load(int tag, int set, int line, int block, String rPolicy)
         {
             int AccessTime = 0;
@@ -109,6 +110,20 @@ namespace CacheMemorySimulator
                     if (rPolicy == "FIFO")
                     {
                         //TODO replace using fifo
+                        //Search for line to e replaced
+                        foreach(List<int> row in this.cache){
+                            if(row[3] == 000) //found oldest data in cache
+                            {
+                                if(row[1] == 1) //Data dirty
+                                {
+                                    //Write data to MM
+                                }
+                                //Write data to cache
+                                List<int> newRow = new List<int>(5) { 1, 1, tag, 111, block };
+                                this.cache[this.cache.IndexOf(row)] = newRow; 
+                                break;
+                            }
+                        }
                     }
                     else
                     {
