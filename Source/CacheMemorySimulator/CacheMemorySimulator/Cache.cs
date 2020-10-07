@@ -81,8 +81,9 @@ namespace CacheMemorySimulator
         }
 
         //TODO operate function
-        public void load(int tag, int set, int line, int block, String rPolicy)
+        public int load(int tag, int set, int line, int block, String rPolicy)
         {
+            int AccessTime = 0;
             //Fully Associative
             if (set == -1 && line == -1)
             {
@@ -129,9 +130,16 @@ namespace CacheMemorySimulator
                 }
                 else //Cache line busy
                 {
-                    if (this.cache[line][0] == 1) //See if data is dirty
+                    if (this.cache[line][1] == 1) //See if data is dirty
                     {
                         //Write data to MM
+                        AccessTime = AccessTime + 21;
+                    }
+                    else
+                    {
+                        //TODO transfertime
+                        List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                        this.cache[line] = newRow;
                     }
                 }
             }
@@ -140,6 +148,7 @@ namespace CacheMemorySimulator
             {
 
             }
+            return AccessTime;
         }
 
     }
