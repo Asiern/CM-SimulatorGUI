@@ -109,13 +109,14 @@ namespace CacheMemorySimulator
 
                 if (this.operation == "STORE")
                 {
-                    //STORE DATA
+                    //STORE TO MM
                     this.CH.store(tag, set, line, block, this.rPolicy);
                 }
                 else
                 {
-                    //TODO READ DATA
-                    this.CH.load(tag, set, line, block, this.rPolicy);
+                    //TODO LOAD CM
+                    int AT = this.CH.load(tag, set, line, block, this.rPolicy);
+                    this.AccessTime.Text = AT.ToString();
                 }
 
                 this.loadTable(this.CH.getCache());
