@@ -106,19 +106,18 @@ namespace CacheMemorySimulator
 
                 //INTERPRET ADDRESS
                 (tag, set, line, block) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
-
+                int AT;
                 if (this.operation == "STORE")
                 {
                     //STORE TO MM
-                    this.CH.store(tag, set, line, block, this.rPolicy);
+                    AT = this.CH.store(tag, set, line, block, this.rPolicy);
                 }
                 else
                 {
-                    //TODO LOAD CM
-                    int AT = this.CH.load(tag, set, line, block, this.rPolicy);
-                    this.AccessTime.Text = AT.ToString();
+                    AT = this.CH.load(tag, set, line, block, this.rPolicy);
+                    
                 }
-
+                this.AccessTime.Text = AT.ToString();
                 this.loadTable(this.CH.getCache());
             }
             catch (Exception ex)
