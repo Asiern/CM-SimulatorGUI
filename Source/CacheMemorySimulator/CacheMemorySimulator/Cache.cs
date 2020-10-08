@@ -147,7 +147,9 @@ namespace CacheMemorySimulator
                 //Search for block on cache
                 if (this.indexOfBlock(block) != -1)
                 {
-                    //Block is already on cache
+                    //Block is already on cache => hit
+                    h = "hit";
+                    AccessTime = this.TCM;
                 }
                 else
                 {
@@ -155,11 +157,10 @@ namespace CacheMemorySimulator
                     //Search for a free space in cache
                     foreach (List<int> row in this.cache)
                     {
-                        if (row[0] == 0)
+                        if (row[0] == -1 || row[0] == 0)
                         {
                             //Found an empty space
-                            //Write data to row
-                            //TODO repl.
+                            //TODO caclculate repl.
                             this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 7, block };
                             emptySapce = true;
                             break;
@@ -175,7 +176,7 @@ namespace CacheMemorySimulator
                             //Search for line to be replaced
                             foreach (List<int> row in this.cache)
                             {
-                                if (row[3] == 000) //found oldest data in cache
+                                if (row[3] == 0) //found oldest data in cache
                                 {
                                     if (row[1] == 1) //Data dirty
                                     {
@@ -195,6 +196,9 @@ namespace CacheMemorySimulator
                             //TODO replace using LRU
                         }
                     }
+                    h = "miss";
+                    //Tbt = Tmm + (num_words -1)Tbuff
+                    AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                 }
             }
             //Direct Mapping
