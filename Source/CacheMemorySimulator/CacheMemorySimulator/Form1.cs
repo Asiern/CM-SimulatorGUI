@@ -24,6 +24,8 @@ namespace CacheMemorySimulator
         private String rPolicy = "FIFO";
         private String operation = "LOAD";
         private int TotalAccesTime = 0;
+        private int hits = 0;
+        private int misses = 0;
 
         public Form1()
         {
@@ -40,12 +42,35 @@ namespace CacheMemorySimulator
             //Default values
             CH = new Cache(this.wSize, this.bSize);
             //Load Cache Table
-            loadTable(CH.getCache());
+            this.reload();
 
         }
         private void selectButton(MaterialButton Btn)
         {
             Btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+        }
+        private void reload()
+        {
+            //VALUES
+            this.TotalAccesTime = 0;
+            this.hits = 0;
+            this.misses = 0;
+
+            //CACHE RELOAD
+            this.CH.initilaize();
+            this.loadTable(this.CH.getCache());
+
+            //LABELS
+            this.address.Text = "-";
+            this.word.Text = "-";
+            this.block.Text = "-";
+            this.set.Text = "-";
+            this.line.Text = "-";
+            this.Chtag.Text = "-";
+            this.mapping.Text = "-";
+            this.hitmiss.Text = "-";
+            this.AccessTime.Text = "-";
+            this.TAccesTime.Text = "-";
         }
         private void ButtonGroupSwitch(int GroupCode)
         {
@@ -122,6 +147,16 @@ namespace CacheMemorySimulator
                     (AT, h) = this.CH.load(tag, set, line, block, this.rPolicy, num_words);
 
                 }
+                //GET HITS / MISSES
+                if (h == "hit")
+                {
+                    this.hits++;
+                }
+                else if (h == "miss")
+                {
+                    misses++;
+                }
+
                 //GET TOTAL ACCESS TIME
                 this.TotalAccesTime += AT;
 
@@ -206,9 +241,7 @@ namespace CacheMemorySimulator
                 this.wSize = 4;
                 this.ButtonGroupSwitch(1);
                 wSize4btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
 
         }
@@ -220,9 +253,7 @@ namespace CacheMemorySimulator
                 this.wSize = 8;
                 this.ButtonGroupSwitch(1);
                 materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.TotalAccesTime = 0;
-                this.loadTable(CH.getCache());
+                this.reload();
             }
         }
 
@@ -233,9 +264,7 @@ namespace CacheMemorySimulator
                 this.bSize = 32;
                 this.ButtonGroupSwitch(2);
                 materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -246,9 +275,7 @@ namespace CacheMemorySimulator
                 this.bSize = 64;
                 this.ButtonGroupSwitch(2);
                 materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -259,9 +286,7 @@ namespace CacheMemorySimulator
                 this.sSize = 1;
                 this.ButtonGroupSwitch(3);
                 materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -272,9 +297,7 @@ namespace CacheMemorySimulator
                 this.sSize = 2;
                 this.ButtonGroupSwitch(3);
                 materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -285,9 +308,7 @@ namespace CacheMemorySimulator
                 this.sSize = 4;
                 this.ButtonGroupSwitch(3);
                 materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -298,9 +319,7 @@ namespace CacheMemorySimulator
                 this.sSize = 8;
                 this.ButtonGroupSwitch(3);
                 materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -311,9 +330,7 @@ namespace CacheMemorySimulator
                 this.rPolicy = "FIFO";
                 this.ButtonGroupSwitch(4);
                 materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
@@ -324,9 +341,7 @@ namespace CacheMemorySimulator
                 this.rPolicy = "LRU";
                 this.ButtonGroupSwitch(4);
                 materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-                CH.initilaize();
-                this.loadTable(CH.getCache());
-                this.TotalAccesTime = 0;
+                this.reload();
             }
         }
 
