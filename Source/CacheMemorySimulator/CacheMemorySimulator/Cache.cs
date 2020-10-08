@@ -120,7 +120,7 @@ namespace CacheMemorySimulator
 
                         //Move data CM => MM
                         //Tbt = Tmm + (num_words -1)Tbuff
-                        AccessTime = this.TMM + this.TBUFF * (num_words - 1);
+                        AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                     }
                 }
                 if (!found)
@@ -215,14 +215,14 @@ namespace CacheMemorySimulator
                     this.cache[line] = newRow;
                     h = "miss";
                     //Tbt = Tmm + (num_words -1)Tbuff
-                    AccessTime = this.TMM + this.TBUFF * (num_words - 1);
+                    AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                 }
                 else //Cache line busy
                 {
                     if (this.cache[line][1] == 1) //See if data is dirty
                     {
                         //Tbt = Tmm + (num_words -1)Tbuff
-                        AccessTime = this.TMM + this.TBUFF * (num_words - 1);
+                        AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                         List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
                         this.cache[line] = newRow;
                     }
@@ -231,7 +231,7 @@ namespace CacheMemorySimulator
                         List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
                         this.cache[line] = newRow;
                         //Tbt = Tmm + (num_words -1)Tbuff
-                        AccessTime = this.TMM + this.TBUFF * (num_words - 1);
+                        AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
 
                     }
                     h = "miss";
