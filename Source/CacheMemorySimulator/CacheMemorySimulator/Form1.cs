@@ -115,7 +115,7 @@ namespace CacheMemorySimulator
                 else
                 {
                     AT = this.CH.load(tag, set, line, block, this.rPolicy);
-                    
+
                 }
                 this.AccessTime.Text = AT.ToString();
                 this.loadTable(this.CH.getCache());
@@ -322,7 +322,7 @@ namespace CacheMemorySimulator
         {
             if (materialButton13.Type == MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined)
             {
-                this.rPolicy = "LOAD";
+                this.operation = "LOAD";
                 this.ButtonGroupSwitch(5);
                 materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             }
