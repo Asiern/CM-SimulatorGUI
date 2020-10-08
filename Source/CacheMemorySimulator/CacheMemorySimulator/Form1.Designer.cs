@@ -57,6 +57,7 @@
             this.Data = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.AccessTime = new MaterialSkin.Controls.MaterialLabel();
             this.line = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
             this.mapping = new MaterialSkin.Controls.MaterialLabel();
@@ -75,7 +76,8 @@
             this.address = new MaterialSkin.Controls.MaterialLabel();
             this.MMAddress = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
-            this.AccessTime = new MaterialSkin.Controls.MaterialLabel();
+            this.hitmiss = new MaterialSkin.Controls.MaterialLabel();
+            this.TAccesTime = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -520,6 +522,8 @@
             // materialCard3
             // 
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.TAccesTime);
+            this.materialCard3.Controls.Add(this.hitmiss);
             this.materialCard3.Controls.Add(this.AccessTime);
             this.materialCard3.Controls.Add(this.line);
             this.materialCard3.Controls.Add(this.materialLabel14);
@@ -547,6 +551,18 @@
             this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
             this.materialCard3.Size = new System.Drawing.Size(519, 178);
             this.materialCard3.TabIndex = 2;
+            // 
+            // AccessTime
+            // 
+            this.AccessTime.AutoSize = true;
+            this.AccessTime.Depth = 0;
+            this.AccessTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.AccessTime.Location = new System.Drawing.Point(276, 135);
+            this.AccessTime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.AccessTime.Name = "AccessTime";
+            this.AccessTime.Size = new System.Drawing.Size(10, 19);
+            this.AccessTime.TabIndex = 18;
+            this.AccessTime.Text = "0";
             // 
             // line
             // 
@@ -766,17 +782,29 @@
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
             // 
-            // AccessTime
+            // hitmiss
             // 
-            this.AccessTime.AutoSize = true;
-            this.AccessTime.Depth = 0;
-            this.AccessTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.AccessTime.Location = new System.Drawing.Point(276, 135);
-            this.AccessTime.MouseState = MaterialSkin.MouseState.HOVER;
-            this.AccessTime.Name = "AccessTime";
-            this.AccessTime.Size = new System.Drawing.Size(10, 19);
-            this.AccessTime.TabIndex = 18;
-            this.AccessTime.Text = "0";
+            this.hitmiss.AutoSize = true;
+            this.hitmiss.Depth = 0;
+            this.hitmiss.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.hitmiss.Location = new System.Drawing.Point(87, 134);
+            this.hitmiss.MouseState = MaterialSkin.MouseState.HOVER;
+            this.hitmiss.Name = "hitmiss";
+            this.hitmiss.Size = new System.Drawing.Size(5, 19);
+            this.hitmiss.TabIndex = 19;
+            this.hitmiss.Text = "-";
+            // 
+            // TAccesTime
+            // 
+            this.TAccesTime.AutoSize = true;
+            this.TAccesTime.Depth = 0;
+            this.TAccesTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.TAccesTime.Location = new System.Drawing.Point(431, 135);
+            this.TAccesTime.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TAccesTime.Name = "TAccesTime";
+            this.TAccesTime.Size = new System.Drawing.Size(10, 19);
+            this.TAccesTime.TabIndex = 20;
+            this.TAccesTime.Text = "0";
             // 
             // Form1
             // 
@@ -853,6 +881,8 @@
         private MaterialSkin.Controls.MaterialLabel line;
         private MaterialSkin.Controls.MaterialLabel materialLabel14;
         private MaterialSkin.Controls.MaterialLabel AccessTime;
+        private MaterialSkin.Controls.MaterialLabel hitmiss;
+        private MaterialSkin.Controls.MaterialLabel TAccesTime;
     }
 }
 

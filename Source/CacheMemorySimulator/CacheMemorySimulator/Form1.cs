@@ -23,6 +23,7 @@ namespace CacheMemorySimulator
         private int sSize = 1;
         private String rPolicy = "FIFO";
         private String operation = "LOAD";
+        private int TotalAccesTime = 0;
 
         public Form1()
         {
@@ -102,22 +103,32 @@ namespace CacheMemorySimulator
             try
             {
                 int address = int.Parse(input.Text);
-                int tag, set, line, block;
+                int tag, set, line, block, num_words;
 
                 //INTERPRET ADDRESS
-                (tag, set, line, block) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
+                (tag, set, line, block, num_words) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
                 int AT;
+                String h = "-";
+
+                //OPERATE
                 if (this.operation == "STORE")
                 {
                     //STORE TO MM
-                    AT = this.CH.store(tag, set, line, block, this.rPolicy);
+                    AT = this.CH.store(tag, set, line, block, this.rPolicy, num_words);
                 }
-                else
+                else //this.operation == "LOAD"
                 {
-                    AT = this.CH.load(tag, set, line, block, this.rPolicy);
+                    //LOAD CACHE
+                    (AT, h) = this.CH.load(tag, set, line, block, this.rPolicy, num_words);
 
                 }
+                //GET TOTAL ACCESS TIME
+                this.TotalAccesTime += AT;
+
+                //LOAD VALUES TO OUTPUT
+                this.TAccesTime.Text = this.TotalAccesTime.ToString();
                 this.AccessTime.Text = AT.ToString();
+                this.hitmiss.Text = h;
                 this.loadTable(this.CH.getCache());
             }
             catch (Exception ex)
@@ -125,7 +136,7 @@ namespace CacheMemorySimulator
                 MessageBox.Show(ex.Message);
             }
         }
-        public (int, int, int, int) interpretAddress(int address, int wordSize, int blockSize, int setSize)
+        public (int, int, int, int, int) interpretAddress(int address, int wordSize, int blockSize, int setSize)
         {
             try
             {
@@ -177,12 +188,12 @@ namespace CacheMemorySimulator
                 this.address.Text = address.ToString();
                 this.word.Text = word.ToString();
 
-                return (tag, set, line, block);
+                return (tag, set, line, block, num_words_block);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return (-1, -1, -1, -1);
+                return (-1, -1, -1, -1, -1);
             }
 
         }
@@ -197,6 +208,7 @@ namespace CacheMemorySimulator
                 wSize4btn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
 
         }
@@ -209,6 +221,7 @@ namespace CacheMemorySimulator
                 this.ButtonGroupSwitch(1);
                 materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
+                this.TotalAccesTime = 0;
                 this.loadTable(CH.getCache());
             }
         }
@@ -222,6 +235,7 @@ namespace CacheMemorySimulator
                 materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -234,6 +248,7 @@ namespace CacheMemorySimulator
                 materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -246,6 +261,7 @@ namespace CacheMemorySimulator
                 materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -258,6 +274,7 @@ namespace CacheMemorySimulator
                 materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -270,6 +287,7 @@ namespace CacheMemorySimulator
                 materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -282,6 +300,7 @@ namespace CacheMemorySimulator
                 materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -294,6 +313,7 @@ namespace CacheMemorySimulator
                 materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
@@ -306,6 +326,7 @@ namespace CacheMemorySimulator
                 materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
                 CH.initilaize();
                 this.loadTable(CH.getCache());
+                this.TotalAccesTime = 0;
             }
         }
 
