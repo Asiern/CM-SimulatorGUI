@@ -75,15 +75,59 @@ namespace CacheMemorySimulator
             return this.num_lines;
         }
 
+        private int indexOfBlock(int Block)
+        {
+            foreach (List<int> row in this.cache)
+            {
+                if (row[4] == Block)
+                {
+                    return this.cache.IndexOf(row);
+                }
+            }
+            return -1;
+        }
+        private void updateRPIndex()
+        {
+            foreach (List<int> row in this.cache)
+            {
+                this.cache[this.cache.IndexOf(row)][3] = row[3] - 1;
+            }
+        }
         //TODO store function
         public int store(int tag, int set, int line, int block, String rPolicy)
         {
+            int TAccess = 0;
             //Fully Associative
             if (set == -1 && line == -1)
             {
 
             }
-            return -1;
+            //Direct Mapping
+            else if (set == -1 && line != -1)
+            {
+                Boolean found = false;
+                foreach (List<int> row in this.cache)
+                {
+                    if (row[4] == block)
+                    {
+                        //Set dirty to 0
+                        this.cache[this.cache.IndexOf(row)][1] = 0;
+                        found = true;
+
+                        //Move data CM => MM
+                    }
+                }
+                if (!found)
+                {
+                    MessageBox.Show("Block not found on cache. Can't store data.");
+                }
+            }
+            //Set Associative
+            else
+            {
+
+            }
+            return TAccess;
         }
 
         //TODO load function
@@ -93,47 +137,56 @@ namespace CacheMemorySimulator
             //Fully Associative
             if (set == -1 && line == -1)
             {
-                Boolean emptySapce = false;
-                //Search for a free space in cache
-                foreach (List<int> row in this.cache)
+                //Search for block on cache
+                if (this.indexOfBlock(block) != -1)
                 {
-                    if (row[0] == 0 || row[4] == block)
-                    {
-                        //Found an empty space
-                        //Write data to row
-                        //TODO repl.
-                        this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 1, block };
-                        emptySapce = true;
-                        break;
-                    }
+                    //Block is already on cache
                 }
-
-                //No empty space found on cache
-                if (!emptySapce)
+                else
                 {
-                    //Need to rewrite data
-                    if (rPolicy == "FIFO")
+                    Boolean emptySapce = false;
+                    //Search for a free space in cache
+                    foreach (List<int> row in this.cache)
                     {
-                        //TODO replace using fifo
-                        //Search for line to e replaced
-                        foreach (List<int> row in this.cache)
+                        if (row[0] == 0)
                         {
-                            if (row[3] == 000) //found oldest data in cache
-                            {
-                                if (row[1] == 1) //Data dirty
-                                {
-                                    //Write data to MM
-                                }
-                                //Write data to cache
-                                List<int> newRow = new List<int>(5) { 1, 1, tag, 111, block };
-                                this.cache[this.cache.IndexOf(row)] = newRow;
-                                break;
-                            }
+                            //Found an empty space
+                            //Write data to row
+                            //TODO repl.
+                            this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 1, block };
+                            emptySapce = true;
+                            break;
                         }
                     }
-                    else
+                    //No empty space found on cache
+                    if (!emptySapce)
                     {
-                        //TODO replace using LRU
+                        //Need to rewrite data
+                        if (rPolicy == "FIFO")
+                        {
+                            //TODO replace using fifo
+                            //Search for line to be replaced
+                            foreach (List<int> row in this.cache)
+                            {
+                                if (row[3] == 000) //found oldest data in cache
+                                {
+                                    if (row[1] == 1) //Data dirty
+                                    {
+                                        //Write data to MM
+                                    }
+                                    //Write data to cache
+                                    //Modify repl.
+                                    this.updateRPIndex();
+                                    List<int> newRow = new List<int>(5) { 1, 1, tag, 111, block };
+                                    this.cache[this.cache.IndexOf(row)] = newRow;
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            //TODO replace using LRU
+                        }
                     }
                 }
             }
@@ -145,7 +198,6 @@ namespace CacheMemorySimulator
                 {
                     //Cache line was empty
                     //Write data to cache
-                    //TODO repl.
                     List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
                     this.cache[line] = newRow;
                 }
@@ -153,12 +205,14 @@ namespace CacheMemorySimulator
                 {
                     if (this.cache[line][1] == 1) //See if data is dirty
                     {
-                        //Write data to MM
+                        //Write data CM => MM
                         AccessTime = AccessTime + 21;
+                        List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                        this.cache[line] = newRow;
                     }
                     else
                     {
-                        //TODO transfertime
+                        //TODO transfertime MM => CM
                         List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
                         this.cache[line] = newRow;
                     }
