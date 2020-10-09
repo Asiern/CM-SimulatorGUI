@@ -118,7 +118,14 @@ namespace CacheMemorySimulator
                 string[] listRow = new string[5];
                 for (int i = 0; i < row.Count; i++)
                 {
-                    listRow[i] = row[i].ToString();
+                    if (row[i] == -1)
+                    {
+                        listRow[i] = "-";
+                    }
+                    else
+                    {
+                        listRow[i] = row[i].ToString();
+                    }
                 }
                 this.CacheRep.Items.Add(new ListViewItem(listRow));
             }
