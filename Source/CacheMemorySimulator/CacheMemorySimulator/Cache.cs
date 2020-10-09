@@ -147,6 +147,8 @@ namespace CacheMemorySimulator
                 //Search for block on cache
                 if (this.indexOfBlock(block) != -1)
                 {
+                    //Set dirty to 1
+                    this.cache[this.indexOfBlock(block)][1] = 1;
                     //Block is already on cache => hit
                     h = "hit";
                     AccessTime = this.TCM;
@@ -207,6 +209,8 @@ namespace CacheMemorySimulator
                 //See if block is already on cache
                 if (this.cache[line][4] == block)
                 {
+                    //Set dirty to 1
+                    this.cache[line][1] = 1;
                     h = "hit";
                     AccessTime = this.TCM;
                 }
