@@ -78,7 +78,18 @@ namespace CacheMemorySimulator
         {
             return this.num_lines;
         }
-
+        public int num_used_lines()
+        {
+            int value = 0;
+            foreach (List<int> row in this.cache)
+            {
+                if (row[0] == 1)
+                {
+                    value++;
+                }
+            }
+            return value;
+        }
         private int indexOfBlock(int Block)
         {
             foreach (List<int> row in this.cache)
@@ -104,7 +115,24 @@ namespace CacheMemorySimulator
             //Fully Associative
             if (set == -1 && line == -1)
             {
+                Boolean found = false;
+                foreach (List<int> row in this.cache)
+                {
+                    if (row[4] == block)
+                    {
+                        //Set dirty to 0
+                        this.cache[this.cache.IndexOf(row)][1] = 0;
+                        found = true;
 
+                        //Move data CM => MM
+                        //Tbt = Tmm + (num_words -1)Tbuff
+                        AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                    }
+                }
+                if (!found)
+                {
+                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
+                }
             }
             //Direct Mapping
             else if (set == -1 && line != -1)
@@ -125,7 +153,7 @@ namespace CacheMemorySimulator
                 }
                 if (!found)
                 {
-                    MessageBox.Show("Block not found on cache. Can't store data.");
+                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
                 }
             }
             //Set Associative
@@ -162,8 +190,7 @@ namespace CacheMemorySimulator
                         if (row[0] == -1 || row[0] == 0)
                         {
                             //Found an empty space
-                            //TODO caclculate repl.
-                            this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, 7, block };
+                            this.cache[this.cache.IndexOf(row)] = new List<int>(5) { 1, 1, tag, this.num_used_lines(), block };
                             emptySapce = true;
                             break;
                         }
@@ -183,12 +210,14 @@ namespace CacheMemorySimulator
                                     if (row[1] == 1) //Data dirty
                                     {
                                         //Write data to MM
+                                        //TODO 
+                                        AccessTime += this.TCM + this.TMM;
                                     }
                                     //Write data to cache
+                                    List<int> newRow = new List<int>(5) { 1, 1, tag, this.num_used_lines(), block };
+                                    this.cache[this.cache.IndexOf(row)] = newRow;
                                     //Modify repl.
                                     this.updateRPIndex();
-                                    List<int> newRow = new List<int>(5) { 1, 1, tag, 7, block };
-                                    this.cache[this.cache.IndexOf(row)] = newRow;
                                     break;
                                 }
                             }
@@ -200,7 +229,7 @@ namespace CacheMemorySimulator
                     }
                     h = "miss";
                     //Tbt = Tmm + (num_words -1)Tbuff
-                    AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                    AccessTime += this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                 }
             }
             //Direct Mapping
@@ -219,7 +248,7 @@ namespace CacheMemorySimulator
                 {
                     //Cache line was empty
                     //Write data to cache
-                    List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                    List<int> newRow = new List<int>(5) { 1, 1, tag, 0, block };
                     this.cache[line] = newRow;
                     h = "miss";
                     //Tbt = Tmm + (num_words -1)Tbuff
@@ -231,12 +260,12 @@ namespace CacheMemorySimulator
                     {
                         //Tbt = Tmm + (num_words -1)Tbuff
                         AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
-                        List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                        List<int> newRow = new List<int>(5) { 1, 1, tag, 0, block };
                         this.cache[line] = newRow;
                     }
                     else
                     {
-                        List<int> newRow = new List<int>(5) { 1, 1, tag, 1, block };
+                        List<int> newRow = new List<int>(5) { 1, 1, tag, 0, block };
                         this.cache[line] = newRow;
                         //Tbt = Tmm + (num_words -1)Tbuff
                         AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
