@@ -118,7 +118,7 @@ namespace CacheMemorySimulator
                 string[] listRow = new string[5];
                 for (int i = 0; i < row.Count; i++)
                 {
-                    if (row[i] == -1)
+                    if (row[i] < 0)
                     {
                         listRow[i] = "-";
                     }
@@ -374,6 +374,14 @@ namespace CacheMemorySimulator
         {
             this.send();
 
+        }
+
+        private void input_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return)
+            {
+                this.send();
+            }
         }
     }
 }
