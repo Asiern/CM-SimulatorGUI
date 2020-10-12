@@ -165,7 +165,7 @@ namespace CacheMemorySimulator
         }
 
         //TODO load function
-        public (int, string) load(int tag, int set, int line, int block, String rPolicy, int num_words)
+        public (int, string) load(int tag, int set, int line, int block, String rPolicy, int num_words, int num_sets)
         {
             String h = "";
             int AccessTime = 0;
@@ -296,10 +296,62 @@ namespace CacheMemorySimulator
             //Set Associative
             else
             {
+                int num_lines_set = num_lines / num_sets;
+                int top = num_lines_set + (set * num_lines_set) - 1;
+                int bottom = 0 + num_lines_set * set;
+
+                Boolean found = false;
+
+                //Search for block on cache
+                for (int i = bottom; i <= top; i++)
+                {
+                    //Get line
+                    List<int> row = this.getCacheBlock(i);
+                    //Block found
+                    if (row[4] == block)
+                    {
+                        //Set dirty to 1
+                        this.cache[i][1] = 1;
+                        h = "hit";
+                        AccessTime = this.TCM;
+                        found = true;
+                        break;
+                    }
+                }
+                //If Block was not on cache
+                if (!found)
+                {
+                    Boolean empty = false;
+                    //Search for an empty line
+                    for (int i = bottom; i <= top; i++)
+                    {
+                        if (this.cache[i][0] <= 0)
+                        {
+                            this.cache[i] = new List<int> { 1, 1, tag, 0, block };
+                            //Tbt = Tmm + (num_words -1)Tbuff
+                            AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                            empty = true;
+                            break;
+                        }
+                    }
+                    //No empty lines found
+                    if (!empty)
+                    {
+                        //Replace
+                        if (rPolicy == "FIFO")
+                        {
+
+                        }
+                        else
+                        {
+
+                        }
+                    }
+                    h = "miss";
+                }
 
             }
             return (AccessTime, h);
         }
-
     }
 }
