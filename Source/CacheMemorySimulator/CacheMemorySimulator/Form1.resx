@@ -117,6 +117,1579 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;materialCard2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel12.Text" xml:space="preserve">
+    <value>TAccess:</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Name" xml:space="preserve">
+    <value>materialLabel5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel8.Text" xml:space="preserve">
+    <value>Set:</value>
+  </data>
+  <data name="materialLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 485</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Name" xml:space="preserve">
+    <value>materialLabel12</value>
+  </data>
+  <data name="materialLabel6.Text" xml:space="preserve">
+    <value>Output</value>
+  </data>
+  <data name="materialLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 135</value>
+  </data>
+  <data name="&gt;&gt;materialButton4.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="address.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialButton7.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="set.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="word.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="materialLabel16.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="materialLabel15.Text" xml:space="preserve">
+    <value>h:</value>
+  </data>
+  <data name="&gt;&gt;materialButton10.Name" xml:space="preserve">
+    <value>materialButton10</value>
+  </data>
+  <data name="&gt;&gt;materialButton11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
+  </data>
+  <data name="materialLabel11.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;materialButton4.Name" xml:space="preserve">
+    <value>materialButton4</value>
+  </data>
+  <data name="materialButton10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;materialButton7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton13.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Name" xml:space="preserve">
+    <value>materialLabel13</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton5.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="TAccesTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialButton11.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;Data.Name" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="MMBlock.Text" xml:space="preserve">
+    <value>Block:</value>
+  </data>
+  <data name="&gt;&gt;MMBlock.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton10.Text" xml:space="preserve">
+    <value>LRU</value>
+  </data>
+  <data name="&gt;&gt;hitmiss.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="hitmiss.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="materialButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Chtag.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton13.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 36</value>
+  </data>
+  <data name="&gt;&gt;materialButton5.Name" xml:space="preserve">
+    <value>materialButton5</value>
+  </data>
+  <data name="line.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 83</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="materialLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 134</value>
+  </data>
+  <data name="&gt;&gt;materialButton6.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="materialLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="line.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="materialLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 19</value>
+  </data>
+  <data name="&gt;&gt;materialButton11.Name" xml:space="preserve">
+    <value>materialButton11</value>
+  </data>
+  <data name="materialLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>806, 76</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Name" xml:space="preserve">
+    <value>materialLabel3</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 14px, style=Bold</value>
+  </data>
+  <data name="materialLabel5.Text" xml:space="preserve">
+    <value>Cache Representation</value>
+  </data>
+  <data name="materialLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TAccesTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 19</value>
+  </data>
+  <data name="materialButton12.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="materialLabel16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;materialButton6.Name" xml:space="preserve">
+    <value>materialButton6</value>
+  </data>
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="set.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 83</value>
+  </data>
+  <data name="mapping.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="h.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 135</value>
+  </data>
+  <data name="materialButton4.Text" xml:space="preserve">
+    <value>64 bytes</value>
+  </data>
+  <data name="materialLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 135</value>
+  </data>
+  <data name="&gt;&gt;Busy.Name" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Repl.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="hitmiss.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="materialLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AccessTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="Chtag.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="&gt;&gt;Chtag.Name" xml:space="preserve">
+    <value>Chtag</value>
+  </data>
+  <data name="&gt;&gt;materialButton7.Name" xml:space="preserve">
+    <value>materialButton7</value>
+  </data>
+  <data name="&gt;&gt;CacheRep.Name" xml:space="preserve">
+    <value>CacheRep</value>
+  </data>
+  <data name="materialCard3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="set.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;word.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel15.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 19</value>
+  </data>
+  <data name="materialButton7.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="MMWord.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="materialCard2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="h.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="MMWord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 27</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="wSize4btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 53</value>
+  </data>
+  <data name="TAccesTime.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="materialLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 313</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Name" xml:space="preserve">
+    <value>materialLabel9</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>920, 708</value>
+  </data>
+  <data name="materialButton8.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="MMBlock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 27</value>
+  </data>
+  <data name="CacheRep.Alignment" type="System.Windows.Forms.ListViewAlignment, System.Windows.Forms">
+    <value>SnapToGrid</value>
+  </data>
+  <data name="materialLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="materialLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 19</value>
+  </data>
+  <data name="materialLabel2.Text" xml:space="preserve">
+    <value>Block Size</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="AccessTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 134</value>
+  </data>
+  <data name="materialLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 19</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 249</value>
+  </data>
+  <data name="&gt;&gt;wSize4btn.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;MMBlock.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="MMWord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 19</value>
+  </data>
+  <data name="MMAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 27</value>
+  </data>
+  <data name="materialButton5.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="address.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;h.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="block.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="Dirty.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;h.Name" xml:space="preserve">
+    <value>h</value>
+  </data>
+  <data name="mapping.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wSize4btn.Name" xml:space="preserve">
+    <value>wSize4btn</value>
+  </data>
+  <data name="address.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 27</value>
+  </data>
+  <data name="MMWord.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialCard2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="TAccesTime.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MMAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialButton10.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="materialButton3.Text" xml:space="preserve">
+    <value>8 bytes</value>
+  </data>
+  <data name="AccessTime.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="materialLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="&gt;&gt;mapping.Name" xml:space="preserve">
+    <value>mapping</value>
+  </data>
+  <data name="set.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="TAccesTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;materialButton1.Name" xml:space="preserve">
+    <value>materialButton1</value>
+  </data>
+  <data name="materialButton1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="hitmiss.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hitmiss.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 134</value>
+  </data>
+  <data name="Chtag.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MMWord.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;Chtag.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;input.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTextBox, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton7.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="materialLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="materialButton11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 338</value>
+  </data>
+  <data name="materialButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="h.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="materialLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 419</value>
+  </data>
+  <data name="line.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="block.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 27</value>
+  </data>
+  <data name="materialLabel11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton6.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;input.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="Repl.Text" xml:space="preserve">
+    <value>Replacement</value>
+  </data>
+  <data name="materialButton10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 338</value>
+  </data>
+  <data name="materialLabel9.Text" xml:space="preserve">
+    <value>Tag:</value>
+  </data>
+  <data name="&gt;&gt;TAccesTime.Name" xml:space="preserve">
+    <value>TAccesTime</value>
+  </data>
+  <data name="materialButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;set.Name" xml:space="preserve">
+    <value>set</value>
+  </data>
+  <data name="&gt;&gt;Dirty.Name" xml:space="preserve">
+    <value>Dirty</value>
+  </data>
+  <data name="Chtag.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 83</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="wSize4btn.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;materialButton13.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton4.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MMAddress.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;line.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="AccessTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 19</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialLabel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="block.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="&gt;&gt;MMWord.Name" xml:space="preserve">
+    <value>MMWord</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="input.Multiline" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="MMBlock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 19</value>
+  </data>
+  <data name="materialLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Chtag.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialButton5.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;block.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 249</value>
+  </data>
+  <data name="&gt;&gt;h.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialButton3.Name" xml:space="preserve">
+    <value>materialButton3</value>
+  </data>
+  <data name="&gt;&gt;AccessTime.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton6.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;hitmiss.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialButton11.Text" xml:space="preserve">
+    <value>FIFO</value>
+  </data>
+  <data name="materialLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CacheRep.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialButton10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="materialCard1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;AccessTime.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Repl.Name" xml:space="preserve">
+    <value>Repl</value>
+  </data>
+  <data name="materialLabel14.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="materialButton12.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="AccessTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialLabel6.Name" xml:space="preserve">
+    <value>materialLabel6</value>
+  </data>
+  <data name="materialLabel14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton11.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialButton12.Name" xml:space="preserve">
+    <value>materialButton12</value>
+  </data>
+  <data name="materialLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 19</value>
+  </data>
+  <data name="&gt;&gt;materialButton7.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Name" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialButton10.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 224</value>
+  </data>
+  <data name="&gt;&gt;materialButton8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="CacheRep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>442, 320</value>
+  </data>
+  <data name="&gt;&gt;TAccesTime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CacheRep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="materialLabel3.Text" xml:space="preserve">
+    <value>Set Size</value>
+  </data>
+  <data name="materialButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="line.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="Tag.Text" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="materialLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 516</value>
+  </data>
+  <data name="materialButton3.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="MMAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;line.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton9.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="materialLabel16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton9.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="materialLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;Busy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="materialLabel13.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="materialButton11.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="materialButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 159</value>
+  </data>
+  <data name="materialCard1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="materialButton13.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Name" xml:space="preserve">
+    <value>materialLabel1</value>
+  </data>
+  <data name="&gt;&gt;hitmiss.Name" xml:space="preserve">
+    <value>hitmiss</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel16.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        kiRJ0jL6H4yLklSgUh0JAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="input.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MMAddress.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;Chtag.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;MMAddress.Name" xml:space="preserve">
+    <value>MMAddress</value>
+  </data>
+  <data name="Data.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Name" xml:space="preserve">
+    <value>materialLabel2</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="Chtag.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;wSize4btn.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;address.Name" xml:space="preserve">
+    <value>address</value>
+  </data>
+  <data name="materialLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="AccessTime.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="materialLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="block.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton12.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="mapping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 83</value>
+  </data>
+  <data name="materialCard1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 88</value>
+  </data>
+  <data name="mapping.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="materialLabel13.Text" xml:space="preserve">
+    <value>Mapping:</value>
+  </data>
+  <data name="&gt;&gt;materialLabel3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel4.Name" xml:space="preserve">
+    <value>materialLabel4</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Name" xml:space="preserve">
+    <value>materialLabel7</value>
+  </data>
+  <data name="word.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialButton9.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mapping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="materialButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;set.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="MMBlock.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="Dirty.Text" xml:space="preserve">
+    <value>Dirty</value>
+  </data>
+  <data name="&gt;&gt;materialButton8.Name" xml:space="preserve">
+    <value>materialButton8</value>
+  </data>
+  <data name="materialLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 50</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Name" xml:space="preserve">
+    <value>materialLabel8</value>
+  </data>
+  <data name="&gt;&gt;materialLabel12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="word.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialCard2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 362</value>
+  </data>
+  <data name="materialButton10.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="line.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;block.Name" xml:space="preserve">
+    <value>block</value>
+  </data>
+  <data name="materialButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;word.Name" xml:space="preserve">
+    <value>word</value>
+  </data>
+  <data name="address.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="materialButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;MMWord.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;input.Name" xml:space="preserve">
+    <value>input</value>
+  </data>
+  <data name="&gt;&gt;block.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;materialLabel1.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>357, 83</value>
+  </data>
+  <data name="&gt;&gt;materialButton9.Name" xml:space="preserve">
+    <value>materialButton9</value>
+  </data>
+  <data name="input.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="materialButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="materialButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;address.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cache Memory Simulator</value>
+  </data>
+  <data name="&gt;&gt;materialLabel2.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="set.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 83</value>
+  </data>
+  <data name="input.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 12pt</value>
+  </data>
+  <data name="CacheRep.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TAccesTime.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialButton8.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="materialLabel11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 19</value>
+  </data>
+  <data name="materialButton10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 36</value>
+  </data>
+  <data name="MMWord.Text" xml:space="preserve">
+    <value>Word:</value>
+  </data>
+  <data name="&gt;&gt;MMBlock.Name" xml:space="preserve">
+    <value>MMBlock</value>
+  </data>
+  <data name="Data.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="materialLabel11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 134</value>
+  </data>
+  <data name="&gt;&gt;materialButton12.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="set.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 19</value>
+  </data>
+  <data name="materialCard3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="&gt;&gt;set.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="materialButton5.Text" xml:space="preserve">
+    <value>32 bytes</value>
+  </data>
+  <data name="materialButton9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 53</value>
+  </data>
+  <data name="MMBlock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="wSize4btn.Text" xml:space="preserve">
+    <value>4 bytes</value>
+  </data>
+  <data name="materialLabel12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;address.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="materialButton12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 36</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="materialLabel7.Text" xml:space="preserve">
+    <value>Memory Address</value>
+  </data>
+  <data name="&gt;&gt;materialButton1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="MMAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 36</value>
+  </data>
+  <data name="materialButton11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 36</value>
+  </data>
+  <data name="materialLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="materialButton1.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="materialButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>43, 159</value>
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;line.Name" xml:space="preserve">
+    <value>line</value>
+  </data>
+  <data name="&gt;&gt;MMAddress.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="materialLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 19</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="materialButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 249</value>
+  </data>
+  <data name="hitmiss.Size" type="System.Drawing.Size, System.Drawing">
+    <value>5, 19</value>
+  </data>
+  <data name="&gt;&gt;Tag.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Dirty.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Repl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;address.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 249</value>
+  </data>
+  <data name="materialLabel15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialLabel16.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;input.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="materialButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="line.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialButton13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 36</value>
+  </data>
+  <data name="materialLabel16.Text" xml:space="preserve">
+    <value>Source Code</value>
+  </data>
+  <data name="materialCard3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="MMAddress.Text" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="MMBlock.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 36</value>
+  </data>
+  <data name="&gt;&gt;materialButton3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="word.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;materialLabel7.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialButton10.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 36</value>
+  </data>
+  <data name="&gt;&gt;AccessTime.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="wSize4btn.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;block.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="address.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialButton13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="materialLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 19</value>
+  </data>
+  <data name="materialButton4.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 14px, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;mapping.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="materialButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 36</value>
+  </data>
+  <data name="materialLabel4.Text" xml:space="preserve">
+    <value>Replacement Policy</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Name" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="&gt;&gt;materialCard1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="materialLabel14.Text" xml:space="preserve">
+    <value>Line:</value>
+  </data>
+  <data name="&gt;&gt;CacheRep.Parent" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="&gt;&gt;MMBlock.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialCard2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 109</value>
+  </data>
+  <data name="materialLabel10.Text" xml:space="preserve">
+    <value>Cache:</value>
+  </data>
+  <data name="block.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TAccesTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 134</value>
+  </data>
+  <data name="materialButton9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 36</value>
+  </data>
+  <data name="mapping.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Tag.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;materialButton11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;materialButton12.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialButton13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 83</value>
+  </data>
+  <data name="&gt;&gt;materialLabel13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;mapping.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="materialLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 28</value>
+  </data>
+  <data name="word.Text" xml:space="preserve">
+    <value>empty</value>
+  </data>
+  <data name="&gt;&gt;materialLabel8.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 88</value>
+  </data>
+  <data name="materialButton6.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="materialCard1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;materialLabel11.Name" xml:space="preserve">
+    <value>materialLabel11</value>
+  </data>
+  <data name="&gt;&gt;TAccesTime.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 516</value>
+  </data>
+  <data name="materialButton13.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="materialLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton3.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="&gt;&gt;materialLabel9.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialCard1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>328, 597</value>
+  </data>
+  <data name="wSize4btn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 6, 4, 6</value>
+  </data>
+  <data name="&gt;&gt;MMWord.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton8.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 19</value>
+  </data>
+  <data name="materialLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 19</value>
+  </data>
+  <data name="materialLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;set.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CacheRep.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialListView, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;word.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialLabel1.Text" xml:space="preserve">
+    <value>Word Size</value>
+  </data>
+  <data name="Busy.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="block.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="word.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 27</value>
+  </data>
+  <data name="&gt;&gt;MMWord.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;materialCard3.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="h.Size" type="System.Drawing.Size, System.Drawing">
+    <value>5, 19</value>
+  </data>
+  <data name="&gt;&gt;line.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="materialButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 36</value>
+  </data>
+  <data name="hitmiss.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="materialLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 83</value>
+  </data>
+  <data name="&gt;&gt;materialLabel10.Name" xml:space="preserve">
+    <value>materialLabel10</value>
+  </data>
+  <data name="h.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;materialButton9.Parent" xml:space="preserve">
+    <value>materialCard1</value>
+  </data>
+  <data name="materialCard3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 507</value>
+  </data>
+  <data name="CacheRep.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 320</value>
+  </data>
+  <data name="&gt;&gt;materialButton8.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="materialLabel11.Text" xml:space="preserve">
+    <value>Access Time:</value>
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialLabel16.Name" xml:space="preserve">
+    <value>materialLabel16</value>
+  </data>
+  <data name="&gt;&gt;hitmiss.Parent" xml:space="preserve">
+    <value>materialCard3</value>
+  </data>
+  <data name="materialButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 36</value>
+  </data>
+  <data name="materialLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 19</value>
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="wSize4btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 36</value>
+  </data>
+  <data name="&gt;&gt;AccessTime.Name" xml:space="preserve">
+    <value>AccessTime</value>
+  </data>
+  <data name="&gt;&gt;wSize4btn.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="Busy.Text" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="CacheRep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 25</value>
+  </data>
+  <data name="materialCard3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>519, 178</value>
+  </data>
+  <data name="&gt;&gt;h.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialButton4.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 444</value>
+  </data>
+  <data name="materialLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 17</value>
+  </data>
+  <data name="&gt;&gt;materialLabel14.Name" xml:space="preserve">
+    <value>materialLabel14</value>
+  </data>
+  <data name="&gt;&gt;materialButton9.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="MMAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="materialLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 134</value>
+  </data>
+  <data name="&gt;&gt;mapping.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="input.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;word.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="h.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialButton13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 516</value>
+  </data>
+  <data name="materialLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 19</value>
+  </data>
+  <data name="materialLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="materialButton12.Text" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="&gt;&gt;Tag.Name" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="&gt;&gt;materialButton5.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialButton, MaterialSkin, Version=2.1.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;materialLabel16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;materialLabel15.Name" xml:space="preserve">
+    <value>materialLabel15</value>
+  </data>
+  <data name="&gt;&gt;materialCard2.Name" xml:space="preserve">
+    <value>materialCard2</value>
+  </data>
+  <data name="materialLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialCard2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Chtag.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="&gt;&gt;materialButton13.Name" xml:space="preserve">
+    <value>materialButton13</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
