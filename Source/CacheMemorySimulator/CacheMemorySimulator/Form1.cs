@@ -70,6 +70,7 @@ namespace CacheMemorySimulator
             this.mapping.Text = "-";
             this.hitmiss.Text = "-";
             this.AccessTime.Text = "-";
+            this.h.Text = "-";
             this.TAccesTime.Text = "-";
         }
         private void ButtonGroupSwitch(int GroupCode)
@@ -171,6 +172,7 @@ namespace CacheMemorySimulator
                 this.TAccesTime.Text = this.TotalAccesTime.ToString();
                 this.AccessTime.Text = AT.ToString();
                 this.hitmiss.Text = h;
+                this.h.Text = hits.ToString() + "/" + misses.ToString();
                 this.loadTable(this.CH.getCache());
             }
             catch (Exception ex)
