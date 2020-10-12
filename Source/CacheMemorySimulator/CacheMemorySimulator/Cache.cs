@@ -116,13 +116,14 @@ namespace CacheMemorySimulator
             }
         }
         //TODO store function
-        public int store(int tag, int set, int line, int block, String rPolicy, int num_words)
+        public int store(int tag, int set, int line, int block, String rPolicy, int num_words, int num_sets)
         {
+            Boolean found = false;
             int AccessTime = 0;
             //Fully Associative
             if (set == -1 && line == -1)
             {
-                Boolean found = false;
+
                 foreach (List<int> row in this.cache)
                 {
                     if (row[4] == block)
@@ -134,6 +135,7 @@ namespace CacheMemorySimulator
                         //Move data CM => MM
                         //Tbt = Tmm + (num_words -1)Tbuff
                         AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                        break;
                     }
                 }
                 if (!found)
@@ -144,7 +146,7 @@ namespace CacheMemorySimulator
             //Direct Mapping
             else if (set == -1 && line != -1)
             {
-                Boolean found = false;
+
                 foreach (List<int> row in this.cache)
                 {
                     if (row[4] == block)
@@ -156,6 +158,7 @@ namespace CacheMemorySimulator
                         //Move data CM => MM
                         //Tbt = Tmm + (num_words -1)Tbuff
                         AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                        break;
                     }
                 }
                 if (!found)
@@ -166,7 +169,27 @@ namespace CacheMemorySimulator
             //Set Associative
             else
             {
+                int num_lines_set = num_lines / num_sets;
+                int top = num_lines_set + (set * num_lines_set) - 1;
+                int bottom = 0 + num_lines_set * set;
 
+                for (int i = bottom; i <= top; i++)
+                {
+                    if (this.cache[i][4] == block)
+                    {
+                        this.cache[i][1] = 0;
+                        found = true;
+
+                        //Move data CM => MM
+                        //Tbt = Tmm + (num_words -1)Tbuff
+                        AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                        break;
+                    }
+                }
+                if (!found)
+                {
+                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
+                }
             }
             return AccessTime;
         }
