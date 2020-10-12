@@ -201,7 +201,6 @@ namespace CacheMemorySimulator
                         //Need to rewrite data
                         if (rPolicy == "FIFO")
                         {
-                            //TODO replace using fifo
                             //Search for line to be replaced
                             foreach (List<int> row in this.cache)
                             {
@@ -211,7 +210,6 @@ namespace CacheMemorySimulator
                                     {
                                         //Write data to MM
                                         //TODO 
-                                        AccessTime += this.TCM + this.TMM;
                                     }
                                     //Write data to cache
                                     List<int> newRow = new List<int>(5) { 1, 1, tag, this.num_used_lines(), block };
@@ -225,9 +223,30 @@ namespace CacheMemorySimulator
                         else
                         {
                             //TODO replace using LRU
+                            //TODO Access times
+                            //Search for line to be replaced
+                            foreach (List<int> row in this.cache)
+                            {
+                                if (row[3] == 0) //least recently used data in cache
+                                {
+                                    if (row[1] == 1) //Data dirty
+                                    {
+                                        //Write data to MM
+                                        //TODO 
+                                    }
+                                    //Write data to cache
+                                    List<int> newRow = new List<int>(5) { 1, 1, tag, this.num_used_lines(), block };
+                                    this.cache[this.cache.IndexOf(row)] = newRow;
+                                    //Modify repl.
+                                    this.updateRPIndex();
+                                    break;
+                                }
+                            }
+
                         }
                     }
                     h = "miss";
+                    //Access Time = TCM + Tbt
                     //Tbt = Tmm + (num_words -1)Tbuff
                     AccessTime += this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                 }
