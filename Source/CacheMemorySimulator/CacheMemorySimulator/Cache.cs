@@ -317,7 +317,12 @@ namespace CacheMemorySimulator
                     //Block found
                     if (row[4] == block)
                     {
-                        //Set dirty to 1
+                        //LRU update index
+                        if (rPolicy == "LRU")
+                        {
+                            this.updateRPIndex(top, bottom);
+                            this.cache[i][3] = num_lines_set - 1;
+                        }
                         this.cache[i][1] = 1;
                         h = "hit";
                         AccessTime = this.TCM;
@@ -345,15 +350,20 @@ namespace CacheMemorySimulator
                     //No empty lines found
                     if (!empty)
                     {
-                        //Replace
-                        if (rPolicy == "FIFO")
+                        //Search for line to be replaced in cache
+                        for (int i = bottom; i <= top; i++)
                         {
-
+                            if (this.cache[i][3] == 0)
+                            {
+                                this.cache[i] = new List<int> { 1, 1, tag, num_lines_set, block };
+                                //Tbt = Tmm + (num_words -1)Tbuff
+                                AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
+                                empty = true;
+                                this.updateRPIndex(top, bottom);
+                                break;
+                            }
                         }
-                        else
-                        {
 
-                        }
                     }
                     h = "miss";
                 }
