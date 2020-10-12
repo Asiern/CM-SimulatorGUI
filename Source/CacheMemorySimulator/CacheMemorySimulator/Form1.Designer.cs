@@ -78,6 +78,8 @@
             this.address = new MaterialSkin.Controls.MaterialLabel();
             this.MMAddress = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.h = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1.SuspendLayout();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
@@ -448,7 +450,7 @@
             this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard2.Name = "materialCard2";
             this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(518, 353);
+            this.materialCard2.Size = new System.Drawing.Size(518, 362);
             this.materialCard2.TabIndex = 1;
             // 
             // CacheRep
@@ -469,14 +471,14 @@
             this.CacheRep.FullRowSelect = true;
             this.CacheRep.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.CacheRep.HideSelection = false;
-            this.CacheRep.Location = new System.Drawing.Point(34, 17);
-            this.CacheRep.MinimumSize = new System.Drawing.Size(400, 300);
+            this.CacheRep.Location = new System.Drawing.Point(34, 25);
+            this.CacheRep.MinimumSize = new System.Drawing.Size(400, 320);
             this.CacheRep.MouseLocation = new System.Drawing.Point(-1, -1);
             this.CacheRep.MouseState = MaterialSkin.MouseState.OUT;
             this.CacheRep.Name = "CacheRep";
             this.CacheRep.OwnerDraw = true;
             this.CacheRep.Scrollable = false;
-            this.CacheRep.Size = new System.Drawing.Size(442, 300);
+            this.CacheRep.Size = new System.Drawing.Size(442, 320);
             this.CacheRep.TabIndex = 1;
             this.CacheRep.TileSize = new System.Drawing.Size(168, 30);
             this.CacheRep.UseCompatibleStateImageBehavior = false;
@@ -523,6 +525,8 @@
             // materialCard3
             // 
             this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.h);
+            this.materialCard3.Controls.Add(this.materialLabel15);
             this.materialCard3.Controls.Add(this.TAccesTime);
             this.materialCard3.Controls.Add(this.hitmiss);
             this.materialCard3.Controls.Add(this.AccessTime);
@@ -558,7 +562,7 @@
             this.TAccesTime.AutoSize = true;
             this.TAccesTime.Depth = 0;
             this.TAccesTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.TAccesTime.Location = new System.Drawing.Point(431, 135);
+            this.TAccesTime.Location = new System.Drawing.Point(466, 134);
             this.TAccesTime.MouseState = MaterialSkin.MouseState.HOVER;
             this.TAccesTime.Name = "TAccesTime";
             this.TAccesTime.Size = new System.Drawing.Size(10, 19);
@@ -582,7 +586,7 @@
             this.AccessTime.AutoSize = true;
             this.AccessTime.Depth = 0;
             this.AccessTime.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.AccessTime.Location = new System.Drawing.Point(276, 135);
+            this.AccessTime.Location = new System.Drawing.Point(327, 134);
             this.AccessTime.MouseState = MaterialSkin.MouseState.HOVER;
             this.AccessTime.Name = "AccessTime";
             this.AccessTime.Size = new System.Drawing.Size(10, 19);
@@ -678,7 +682,7 @@
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(357, 135);
+            this.materialLabel12.Location = new System.Drawing.Point(380, 134);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(65, 19);
@@ -690,7 +694,7 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(171, 135);
+            this.materialLabel11.Location = new System.Drawing.Point(214, 134);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(95, 19);
@@ -807,6 +811,30 @@
             this.materialLabel6.TabIndex = 0;
             this.materialLabel6.Text = "Output";
             // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.Location = new System.Drawing.Point(132, 135);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(14, 19);
+            this.materialLabel15.TabIndex = 21;
+            this.materialLabel15.Text = "h:";
+            // 
+            // h
+            // 
+            this.h.AutoSize = true;
+            this.h.Depth = 0;
+            this.h.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.h.Location = new System.Drawing.Point(152, 135);
+            this.h.MouseState = MaterialSkin.MouseState.HOVER;
+            this.h.Name = "h";
+            this.h.Size = new System.Drawing.Size(5, 19);
+            this.h.TabIndex = 22;
+            this.h.Text = "-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -884,6 +912,8 @@
         private MaterialSkin.Controls.MaterialLabel AccessTime;
         private MaterialSkin.Controls.MaterialLabel hitmiss;
         private MaterialSkin.Controls.MaterialLabel TAccesTime;
+        private MaterialSkin.Controls.MaterialLabel h;
+        private MaterialSkin.Controls.MaterialLabel materialLabel15;
     }
 }
 
