@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="materialLabel7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="input.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 12pt</value>
+  </data>
+  <data name="materialLabel5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 14px, style=Bold</value>
+  </data>
+  <data name="h.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="TAccesTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="hitmiss.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="AccessTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="line.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="mapping.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="Chtag.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="set.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="block.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="MMBlock.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="word.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="MMWord.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="address.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="MMAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="materialLabel6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 14px, style=Bold</value>
+  </data>
+  <data name="materialLabel16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto, 14px</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        kiRJ0jL6H4yLklSgUh0JAAAAAElFTkSuQmCC
+</value>
+  </data>
+</root>
