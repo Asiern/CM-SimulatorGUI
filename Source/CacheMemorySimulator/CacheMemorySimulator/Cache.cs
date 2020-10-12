@@ -108,6 +108,13 @@ namespace CacheMemorySimulator
                 this.cache[this.cache.IndexOf(row)][3] = row[3] - 1;
             }
         }
+        private void updateRPIndex(int t, int b)
+        {
+            for (int i = b; i <= t; i++)
+            {
+                this.cache[i][3] = this.cache[i][3] - 1;
+            }
+        }
         //TODO store function
         public int store(int tag, int set, int line, int block, String rPolicy, int num_words)
         {
@@ -327,10 +334,11 @@ namespace CacheMemorySimulator
                     {
                         if (this.cache[i][0] <= 0)
                         {
-                            this.cache[i] = new List<int> { 1, 1, tag, 0, block };
+                            this.cache[i] = new List<int> { 1, 1, tag, num_lines_set, block };
                             //Tbt = Tmm + (num_words -1)Tbuff
                             AccessTime = this.TCM + this.TMM + this.TBUFF * (num_words - 1);
                             empty = true;
+                            this.updateRPIndex(top, bottom);
                             break;
                         }
                     }
