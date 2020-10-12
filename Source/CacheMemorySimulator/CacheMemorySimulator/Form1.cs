@@ -147,7 +147,7 @@ namespace CacheMemorySimulator
                 if (this.operation == "STORE")
                 {
                     //STORE TO MM
-                    AT = this.CH.store(tag, set, line, block, this.rPolicy, num_words);
+                    AT = this.CH.store(tag, set, line, block, this.rPolicy, num_words, num_sets);
                 }
                 else //this.operation == "LOAD"
                 {
