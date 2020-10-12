@@ -136,10 +136,10 @@ namespace CacheMemorySimulator
             try
             {
                 int address = int.Parse(input.Text);
-                int tag, set, line, block, num_words;
+                int tag, set, line, block, num_words, num_sets;
 
                 //INTERPRET ADDRESS
-                (tag, set, line, block, num_words) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
+                (tag, set, line, block, num_words, num_sets) = interpretAddress(address, this.wSize, this.bSize, this.sSize);
                 int AT;
                 String h = "-";
 
@@ -152,7 +152,7 @@ namespace CacheMemorySimulator
                 else //this.operation == "LOAD"
                 {
                     //LOAD CACHE
-                    (AT, h) = this.CH.load(tag, set, line, block, this.rPolicy, num_words);
+                    (AT, h) = this.CH.load(tag, set, line, block, this.rPolicy, num_words, num_sets);
 
                 }
                 //GET HITS / MISSES
@@ -180,7 +180,7 @@ namespace CacheMemorySimulator
                 MessageBox.Show(ex.Message);
             }
         }
-        public (int, int, int, int, int) interpretAddress(int address, int wordSize, int blockSize, int setSize)
+        public (int, int, int, int, int, int) interpretAddress(int address, int wordSize, int blockSize, int setSize)
         {
             try
             {
@@ -232,12 +232,12 @@ namespace CacheMemorySimulator
                 this.address.Text = address.ToString();
                 this.word.Text = word.ToString();
 
-                return (tag, set, line, block, num_words_block);
+                return (tag, set, line, block, num_words_block, num_sets_cache);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                return (-1, -1, -1, -1, -1);
+                return (-1, -1, -1, -1, -1, -1);
             }
 
         }
