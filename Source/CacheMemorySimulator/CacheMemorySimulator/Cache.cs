@@ -247,8 +247,6 @@ namespace CacheMemorySimulator
                         }
                         else
                         {
-                            //TODO replace using LRU
-                            //TODO Access times
                             //Search for line to be replaced
                             foreach (List<int> row in this.cache)
                             {
@@ -260,7 +258,6 @@ namespace CacheMemorySimulator
                                         //Tbt = Tmm + (num_words -1)Tbuff
                                         AccessTime += this.TMM + this.TBUFF * (num_words - 1);
                                     }
-                                    //TODO more Access Time
                                     //Write data to cache
                                     List<int> newRow = new List<int>(5) { 1, 1, tag, this.num_used_lines(), block };
                                     this.cache[this.cache.IndexOf(row)] = newRow;
