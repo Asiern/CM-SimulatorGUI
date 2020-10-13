@@ -140,7 +140,7 @@ namespace CacheMemorySimulator
                 }
                 if (!found)
                 {
-                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
+                    MessageBox.Show("Block not found on cache. Can't store data in MM.");
                 }
             }
             //Direct Mapping
@@ -163,7 +163,7 @@ namespace CacheMemorySimulator
                 }
                 if (!found)
                 {
-                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
+                    MessageBox.Show("Block not found on cache. Can't store data in MM.");
                 }
             }
             //Set Associative
@@ -188,7 +188,7 @@ namespace CacheMemorySimulator
                 }
                 if (!found)
                 {
-                    MessageBox.Show("Block not found on cache. Can't store data to MM.");
+                    MessageBox.Show("Block not found on cache. Can't store data in MM.");
                 }
             }
             return AccessTime;
